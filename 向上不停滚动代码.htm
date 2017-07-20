@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0041)http://www.divcss5.com/yanshi/2013032601/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<META name="keywords" content="">
+<TITLE>向上不停滚动代码-www.divcss5.com-演示</TITLE> 
+
+<STYLE type="text/css">
+body {
+	margin: 0px auto; text-align: center;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+li {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#runLanDiv {
+	background: rgb(254, 185, 0); margin: 0px auto; width: 300px; height: 22px; text-align: left;
+}
+</STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17937"></HEAD> 
+<BODY>
+<P>&nbsp;</P>
+<P>上下不间断滚动</P>
+<P>
+<div id="runLanDiv" style="margin: 0px auto; width: 330px; height: 150px; line-height: 50px; overflow: hidden;" 
+					onmouseover="iScrollAmount=0" onmouseout="iScrollAmount=1"> 
+  <ul>
+  	<li>•向上不停滚动演示1</li>
+  	<li>•向上不停滚动演示2</li>
+  	<li>•向上不停滚动演示3</li>
+  	<li>•向上不停滚动演示4</li>
+  	<li>•向上不停滚动演示5</li>
+  	<li>•向上不停滚动演示6</li>
+  	<li>•向上不停滚动演示7</li>
+  </ul>
+</div>
+
+</BODY>
+
+ <script type="text/javascript">
+	var oMarquee = document.getElementById("runLanDiv");
+	var iLineHeight = 50; //一次滚动的行高 
+	var iLineCount = 10;//条数
+	var iScrollAmount;
+	var iLineHeight;
+	var iScrollAmount = 1;//一次滚动的条数
+	function run() { 
+		oMarquee.scrollTop += iScrollAmount; 
+		if ( oMarquee.scrollTop == iLineCount * iLineHeight ) 
+			oMarquee.scrollTop = 0; 
+			if ( oMarquee.scrollTop % iLineHeight == 0 ) { 
+				window.setTimeout( "run()", 2000 ); //滚动的速度  值越小越快
+			} else { 
+				window.setTimeout( "run()", 10 ); 
+			}
+	}
+	oMarquee.innerHTML += oMarquee.innerHTML;
+	window.setTimeout( "run()", 2000 );//加载页面时  滚动第一条数据的速度
+ </script>
+
+</HTML>

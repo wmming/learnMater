@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery实现彩票随机数字选择效果</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/inputmail.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="sn_buy_lottery_box">
+    <ul class="buy_tag fix" id="buy_tag">
+      <li class="cur">双色球</li>
+      <li>大乐透</li>
+      <li>11选5</li>
+    </ul>
+    <div class="sn_buy_box_tabbox fix" id="sn_buy_box">
+      <div class="sn_buy_box ssq_buy_box">
+        <div class="buy_type_title_index fix">
+          <h3>双色球</h3>
+          <div class="info">
+            <p class="f14">第<span class="bold">201206</span>期</p>
+            <p class="gray">离截止时间还有：<span id="ssq_time">1天20小时32分59秒</span></p>
+          </div>
+        </div>
+        <div class="buy_type_choose_red gray"> [红球]从1-33中选6个不重复的整数 <span class="arrow"></span> </div>
+        <div class="buy_type_choose_blue gray"> [蓝球]从1-16中选一个整数 <span class="arrow"></span> </div>
+        <div id="ssq_choose" class="buy_type_index_ball cl fix">
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="blueball" value="00" />
+        </div>
+        <div class="cl"></div>
+        <div class="buy_type_index_cur_money gray">
+          <p>每注<em class="strong">2元</em>，最高奖 <em class="strong">1000万</em></p>
+          <p>当前奖池奖金<em class="strong">981,041,268元</em></p>
+        </div>
+        <div class="buy_type_index_touzhu"> <a href="#" class="touzhu_now">立即投注</a>
+          <p class="touzhu_btn fix"><a href="###" id="ssq_random"><span>机选一注</span></a><a id="ssq_clean" class="last" href="###"><span>清空</span></a></p>
+          <p><a href="#">怎么玩</a> | <a href="#">多投几注</a></p>
+        </div>
+        <div class="buy_type_index_help">
+          <p class="zoushi"><s></s>走势图</p>
+          <p class="wanfa"><s></s>玩法说明</p>
+        </div>
+      </div>
+      <div class="sn_buy_box dlt_buy_box hide">
+        <div class="buy_type_title_index fix">
+          <h3>大乐透</h3>
+          <p class="three_time">一次彩票兑三次</p>
+          <div class="info">
+            <p class="f14">第<span class="bold">201206</span>期</p>
+            <p class="gray">离截止时间还有：<span id="dlt_time">1天20小时32分59秒</span></p>
+          </div>
+        </div>
+        <div class="buy_type_choose_red gray"> [红球]从1-33中选6个不重复的整数 <span class="arrow"></span> </div>
+        <div class="buy_type_choose_blue gray" style="padding-rgiht:40px;"> [蓝球]从1-16中选一个整数 <span class="arrow"></span> </div>
+        <div id="dlt_choose" class="buy_type_index_ball cl fix">
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="redball" value="00" />
+          <input type="text" class="blueball" value="00"/>
+          <input type="text" class="blueball" value="00" />
+        </div>
+        <div class="cl"></div>
+        <div class="buy_type_index_cur_money gray">
+          <p>每注<em class="strong">2元</em>，最高奖 <em class="strong">1000万</em></p>
+          <p>当前奖池奖金<em class="strong">981,041,268元</em></p>
+        </div>
+        <div class="buy_type_index_touzhu"> <a href="#" class="touzhu_now">立即投注</a>
+          <p class="touzhu_btn fix"><a href="###" id="dlt_random"><span>机选一注</span></a><a id="dlt_clean" class="last" href="###"><span>清空</span></a></p>
+          <p><a href="#">怎么玩</a> | <a href="#">多投几注</a></p>
+        </div>
+        <div class="buy_type_index_help">
+          <p class="zoushi"><s></s>走势图</p>
+          <p class="wanfa"><s></s>玩法说明</p>
+        </div>
+      </div>
+      <div class="sn_buy_box ssxw_buy_box hide">
+        <div class="buy_type_title_index fix">
+          <h3>11选5</h3>
+          <div class="info">
+            <p class="f14">第<span class="bold">201206</span>期</p>
+            <p class="gray">离截止时间还有：<span id="ssxw_time">1天20小时32分59秒</span></p>
+          </div>
+        </div>
+        <div class="buy_type_choose_red gray"> 从01-11中选3个不重复的整数 <a href="#">详细玩法</a> <span class="arrow"></span> </div>
+        <div id="ssxw_choose_ball">
+          <div id="ssxw_choose3" class="buy_type_index_ball cl fix">
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+          </div>
+          <div id="ssxw_choose5" class="buy_type_index_ball cl fix hide">
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+          </div>
+          <div id="ssxw_choose03" class="buy_type_index_ball cl fix hide">
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+            <input type="text" class="redball" value="00" />
+          </div>
+        </div>
+        <div class="cl"></div>
+        <div class="buy_type_index_cur_money gray">
+          <p>返奖率<em class="strong">59%</em>，每天<em class="strong">78期</em><a id="ssxw_clean" class="buttonA last" href="###"><span>清空</span></a></p>
+        </div>
+        <div class="buy_type_index_touzhu"> <a href="#" class="touzhu_now">立即投注</a><a href="#" class="more_touzhu">追号5期</a>
+          <div class="cl"></div>
+          <p class="touzhu_btn fix"><a href="###" id="ssxw_random"><span>机选一注</span></a><a class="last" href="###"><span>多投几注</span></a></p>
+        </div>
+        <div class="buy_type_index_help">
+          <ul id="sswx_buy_tag" class="ssxw_buy_tag fix">
+            <li class="cur">任选三<s class="arrow"></s></li>
+            <li>任选五<s class="arrow"></s></li>
+            <li>前三直选<s class="arrow"></s></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <s class="line"></s> </div>
+  <script type="text/javascript">
+/**
+ * Code Width jQuery
+ * 
+ */
+
+/**
+* [sn_Lottery_choose description]
+* @param  {[type]} elem   [外层box]
+* @param  {[type]} numBox [滚动数字box]
+* @param  {[type]} count  [最大数字限制]
+* @return {[type]}        [function]
+*/
+var sn_Lottery_choose = function(elem, numBox, count){
+  var Num = $(elem);
+  var arrBall = [];
+  var interval, index, i = 0;
+  for(var i = 1; i < count; i++){
+    arrBall.push(i);
+  }
+  arrBall.sort(function(){return (Math.random()<0.5?1:-1)});
+  function setNum(){
+    Num.find(numBox).each(function(){
+      index = arrBall[Math.floor(Math.random() * (count - 1))];
+      $(this).val(index);
+    });
+    i++;
+    if( i > count + 15){
+      arrBall.sort(function(){return (Math.random()<0.5?1:-1)});
+      for(var j = 0; j < Num.find(numBox).length; j++){
+        Num.find(numBox).eq(j).val(arrBall[j]);
+      }
+      return;
+    }
+    setTimeout(arguments.callee,10);
+  }
+  
+  setNum();
+  Num.find(numBox).each(function(){
+
+    $(this).blur(function(){
+      if(parseInt($(this).val()) > (count - 1)){
+        alert("请输入小于" + (count - 1) + "的数字！")
+        $(this).val("");
+      }
+    });
+  });
+}
+
+function re_choose_number(redball, blueball){
+  sn_Lottery_choose(redball.id, redball.cls, redball.count);
+  if(typeof blueball != "object"){return;}
+  sn_Lottery_choose(blueball.id, blueball.cls, blueball.count);
+}
+
+function clean_choose_number(id){
+  $(id).find("input").val("");
+}
+/**
+ * [sn_Tabs description]
+ * @param  {[type]} elem     [触发元素]
+ * @param  {[type]} box      [选项卡容器]
+ * @param  {[type]} boxclass [选项卡对应容器class]
+ * @param  {[type]} type     [触发类型]
+ * @param  {[type]} more     [是否有更多选项]
+ * @return {[type]}          []
+ */
+function sn_Tabs(elem, box, boxclass, type, more){
+  var para = arguments;
+  var timeout;
+  $(elem).find("li").bind(type, function(){
+    var _this = $(this);
+    var i = $(this).index();
+    timeout = setTimeout(function(){
+      _this.addClass("cur").siblings().removeClass("cur");
+      $(box).find(boxclass).eq(i).show().siblings().hide();
+      if(para.length > 5){
+        //sn_Lottery_choose
+        var arr = [
+          {
+            id : "#ssq_choose",
+            cls : ".redball",
+            count : 34,
+            blueball : {
+              id : "#ssq_choose",
+              cls : ".blueball",
+              count : 17
+
+            }
+          },
+          {
+            id : "#dlt_choose",
+            cls : ".redball",
+            count : 36,
+            blueball : {
+              id : "#dlt_choose",
+              cls : ".blueball",
+              count : 13
+            }
+          },{
+            id : "#ssxw_choose_ball",
+            cls : ".redball",
+            count : 12
+          }
+        ];
+        re_choose_number(arr[i], arr[i].blueball);
+        if(i == $(elem).find("li").length - 1){
+          sn_Tabs("#sswx_buy_tag", "#ssxw_choose_ball", ".buy_type_index_ball", "mouseover");
+        }
+      }
+      if(box == "#ssxw_choose_ball"){
+        //type = false;
+        sn_Lottery_choose("#ssxw_choose_ball", ".redball", 12);
+      }
+    },300);
+  });
+  
+  $(elem).find("li").bind("mouseout", function(){
+    clearTimeout(timeout)
+  })
+
+  if(box == "#sn_buy_box"){
+    sn_Lottery_choose("#ssq_choose", ".redball", 34);
+    sn_Lottery_choose("#ssq_choose", ".blueball", 17);
+    sn_Lottery_random_clean();
+  }
+
+}
+function sn_Lottery_random_clean(){
+  $("#ssq_random").click(function(){
+    sn_Lottery_choose("#ssq_choose", ".redball", 34);
+    sn_Lottery_choose("#ssq_choose", ".blueball", 17);
+  });
+  $("#ssq_clean").click(function(){
+    clean_choose_number("#ssq_choose");
+  });
+  $("#dlt_random").click(function(){
+    sn_Lottery_choose("#dlt_choose", ".redball", 36);
+    sn_Lottery_choose("#dlt_choose", ".blueball", 13);
+  });
+  $("#dlt_clean").click(function(){
+    clean_choose_number("#dlt_choose");
+  });
+  $("#ssxw_random").click(function(){
+    sn_Lottery_choose("#ssxw_choose_ball", ".redball", 12);
+  });
+  $("#ssxw_clean").click(function(){
+    clean_choose_number("#ssxw_choose_ball");
+  });
+}
+
+$(function(){
+  
+  sn_Tabs("#buy_tag", "#sn_buy_box", ".sn_buy_box", "mouseover", 0, 1);
+
+});
+</script>
+</div>
+</body>
+</html>

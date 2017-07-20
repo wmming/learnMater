@@ -1,0 +1,587 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font:12px/1.8 Arial;
+	color:#666;
+}
+ul, li {
+	list-style:none;
+}
+h1.tit-h1 {
+	font-size:38px;
+	text-align:center;
+	margin:30px 0 15px;
+	color:#f60;
+}
+.go-back {
+	text-align:center;
+	border-top:1px dashed #ccc;
+	padding:10px;
+	margin-top:20px;
+	font-size:40px;
+}
+.wrap {
+	border:1px dashed #ccc;
+	background:#f8f8f8;
+	padding:20px;
+}
+ @charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textarea, th, td {
+	margin:0;
+	padding:0;
+}
+body, button, input, select, textarea {
+	font:12px/1.5 tahoma, arial, \5b8b\4f53;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+}
+em, i {
+	font-style:normal;
+}
+fieldset, img {
+	border:0;
+}
+ul, ol {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.clear {
+	clear:both;
+	display:block;
+	height:0;
+	overflow:hidden;
+	font-size:0;
+}
+button, input, select, textarea {
+	font-size:100%;
+	outline:none
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.hide {
+	display:none;
+}
+.l {
+	float:left;
+}
+.r {
+	float:right;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	zoom:1;
+}
+.sn_buy_lottery_box {
+	position:relative;
+}
+.sn_buy_box {
+	position:relative;
+	border:1px solid #D1D8E0;
+	margin-top:-1px;
+}
+.sn_buy_lottery_box .buy_tag {
+	position:relative;
+	z-index:10;
+}
+.sn_buy_lottery_box .buy_tag li {
+	float:left;
+	width:74px;
+	height:29px;
+	line-height:29px;
+	margin-right:5px;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+	border:1px solid #D1D8E0;
+	background:#F1F1F1;
+}
+.sn_buy_lottery_box .buy_tag li.cur {
+	background:#fff;
+	border-bottom:1px solid #fff;
+}
+.sn_buy_lottery_box s.line {
+	position:absolute;
+	top:30px;
+	left:0;
+	width:1px;
+	overflow:hidden;
+	background:#c9c9c9;
+	height:10px;
+	z-index:11;
+}
+.mt10 {
+	margin-top:10px;
+}
+.fix:after {
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+.fix {
+	_height:1%;
+*zoom:1;
+}
+.hide {
+	display:none;
+}
+.bold {
+	font-weight:700;
+}
+.f14 {
+	font-size:14px;
+}
+.cl {
+	clear:both;
+}
+/**/
+.sn_cl {
+}
+.sn_lottery_sidebar {
+	float:left;
+	width:220px;
+	margin-right:12px;
+}
+h2 {
+	color:#025EA9;
+}
+.buy-lottery-tickets {
+	height:220px;
+	margin-right:0;
+	border:1px solid #D1D8E0;
+}
+.buy-lottery-tickets .buy-lottery-list li.last {
+	border:0;
+}
+.buy-lottery-tickets .buy-lottery-list li {
+	margin:5px 0;
+}
+.analysis-tools {
+	padding:0 7px;
+	height:329px;
+}
+.chart-title ul li.nrli {
+	color:#025EA9;
+}
+.notice .noticetitle li {
+	width:126px;
+	_width:120px;
+}
+.chart-nr a {
+	text-decoration:none;
+}
+.chart-nr a:hover {
+	text-decoration:underline;
+}
+.database .database-nr dl {
+	margin:0 9px 7px 0;
+*margin-bottom:-4px;
+}
+.notice .noticetitle li.noticetitle-shu {
+	_width:129px;
+	color:#025EA9;
+}
+.notice .noticetitle li.last {
+	border-right:0;
+}
+.r-latest-lottery {
+	width:253px;
+	float:none;
+	border:1px solid #D1D8E0;
+}
+.r-latest-lottery .latesttitle {
+	width:auto;
+}
+.r-latest-lottery .latestnr {
+	width:auto;
+}
+.r-latest-lottery .latestcom li .latesttilte {
+	width:auto;
+	background:#F4F7FB;
+}
+.r-latest-lottery .latestcom li .latestlist a {
+	padding-right:10px;
+}
+.bet {
+	width:auto;
+}
+.betnr dl dd p a.btn {
+	display:inline;
+	margin-left:68px;
+}
+.notice .notinr li a {
+	color:#3A3A3A;
+}
+.notice .notinr li a:hover {
+	color:#D20609;
+}
+.notice .notinr {
+	padding-top:10px;
+}
+.notice .notinr li {
+	height:23px;
+	line-height:23px;
+	overflow:hidden;
+	vertical-align: middle;
+}
+.notice {
+	height:162px;
+}
+.winner {
+	height:88px;
+}
+.r-latest-lottery .latestcom li .latesttilte a {
+	color:#025EA9;
+}
+.r-latest-lottery .latesttitle ul li.ftz {
+	color:#025ea9;
+}
+.winner .winnlist {
+	height:58px;
+}
+.r-latest-lottery .latestcom li .latestlist span {
+	margin-top:3px;
+}
+.r-latest-lottery .latestcom li .latesttilte span {
+	color:#025EA9;
+}
+#picBox_top {
+	height:154px;
+}
+#picBox_top ul#show_pic_top li {
+	height:154px;
+	overflow:hidden;
+	vertical-align: middle;
+}
+#icon_num_top {
+	background:none;
+	height:17px;
+	right:7px;
+	bottom:7px;
+	left:auto;
+	width:auto;
+	z-index:11;
+}
+#icon_num_top li {
+	width:17px;
+	height:17px;
+	line-height:17px;
+	text-align:center;
+	margin-right:5px;
+	background:#FFE1A1;
+	color:#BC2534;
+	border:none;
+}
+#icon_num_top li:hover, #icon_num_top li.active {
+	background:#F8AB21;
+}
+#show_pic_text {
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:30px;
+	line-height:30px;
+	width:478px;
+	color:#FFDF4F;
+	font-size:14px;
+	text-indent:10px;
+	font-weight:700;
+}
+#show_pic_text .mask {
+	position:absolute;
+	width:478px;
+	height:30px;
+	left:0;
+	background:#333;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+#show_pic_text p {
+	position:absolute;
+	width:478px;
+	height:30px;
+	z-index:10;
+}
+#show_pic_text p a {
+	color:#FFDF4F;
+}
+#show_pic_text p a:hover {
+	color:#FFDF4F;
+}
+#picBox_top ul#show_pic_top li img {
+	vertical-align: top;
+}
+.sn_buy_lottery_box {
+	position:relative;
+}
+.sn_buy_box {
+	position:relative;
+	border:1px solid #D1D8E0;
+	margin-top:-1px;
+}
+.sn_buy_lottery_box .buy_tag {
+	position:relative;
+	z-index:10;
+}
+.sn_buy_lottery_box .buy_tag li {
+	float:left;
+	width:74px;
+	height:29px;
+	line-height:29px;
+	margin-right:5px;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+	border:1px solid #D1D8E0;
+	background:#F1F1F1;
+}
+.sn_buy_lottery_box .buy_tag li.cur {
+	background:#fff;
+	border-bottom:1px solid #fff;
+}
+.sn_buy_lottery_box s.line {
+	position:absolute;
+	top:30px;
+	left:0;
+	width:1px;
+	overflow:hidden;
+	background:#c9c9c9;
+	height:10px;
+	z-index:11;
+}
+/**/
+.sn_buy_lottery_box .sn_buy_box .buy_type_title_index {
+	height:50px;
+}
+.sn_buy_lottery_box .gray {
+	color:#727171;
+}
+.sn_buy_box .strong {
+	color:#BE3443;
+}
+.sn_buy_lottery_box .sn_buy_box {
+	padding:5px 7px 10px 15px;
+	height:185px;
+}
+.sn_buy_lottery_box .sn_buy_box .buy_type_title_index h3 {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:12px;
+	background:url(../images/sn_caipiao.png) no-repeat;
+	text-indent:-99999em;
+	overflow:hidden;
+}
+.sn_buy_lottery_box .sn_buy_box .buy_type_title_index .info {
+	float:left;
+	margin-top:10px;
+}
+.sn_buy_lottery_box .sn_buy_box .buy_type_index_help {
+	position:absolute;
+	top:7px;
+	left:330px;
+	width:190px;
+}
+.sn_buy_lottery_box .sn_buy_box .buy_type_index_ssxw_tab {
+	left:290px;
+}
+.sn_buy_lottery_box .sn_buy_box .buy_type_index_help p {
+	position:relative;
+	float:left;
+	padding-left:22px;
+}
+.sn_buy_box .buy_type_index_help p s {
+	position:absolute;
+	left:0;
+	top:0;
+	width:17px;
+	height:18px;
+	background:url(../images/sn_caipiao.png) no-repeat -159px 0;
+}
+.sn_buy_box .buy_type_index_help p.wanfa s {
+	background-position:-181px 0;
+}
+.sn_buy_box .buy_type_choose_red {
+	position:relative;
+	float:left;
+	display:inline;
+	margin:5px 0 15px 6px;
+}
+.sn_buy_box .buy_type_choose_blue {
+	position:relative;
+	float:right;
+	margin:5px 0 15px;
+	padding-right:48px;
+}
+.sn_buy_box .buy_type_choose_red .arrow, .sn_buy_box .buy_type_choose_blue .arrow {
+	display:block;
+	position:absolute;
+	height:0px;
+	line-height:0px;
+	left:10px;
+	top:20px;
+	border-style:solid;
+	border-width:5px 5px 0px;
+	border-color:#fff;
+	border-top-color:#727171
+}
+.sn_buy_box .buy_type_index_ball input {
+	float:left;
+	width:21px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	border:0;
+	vertical-align: middle;
+	font-weight:700;
+	font-size:16px;
+	padding:13px 10px;
+	margin-right:2px;
+	background:url(../images/sn_caipiao.png) no-repeat 0 -89px;
+	font-family:arial;
+}
+.sn_buy_box .buy_type_index_ball input.blueball {
+	background-position:-43px -89px;
+}
+.sn_buy_box .buy_type_index_touzhu {
+	position:absolute;
+	right:20px;
+	top:97px;
+	width:116px;
+}
+.sn_buy_box .buy_type_index_touzhu a.touzhu_now {
+	display:block;
+	width:116px;
+	height:34px;
+	background:url(../images/sn_caipiao.png) no-repeat 0 -52px;
+	text-indent:-99999em;
+	overflow:hidden;
+	margin-bottom:5px;
+}
+.sn_buy_box .buy_type_index_touzhu .touzhu_btn {
+	margin-bottom:5px;
+}
+.sn_buy_box .buy_type_index_touzhu .touzhu_btn a, a.buttonA {
+	float:left;
+	height:18px;
+	text-align:center;
+	background:url(../images/sn_caipiao.png) no-repeat -117px -52px;
+	padding-left:9px;
+	margin-right:5px;
+	color:#2b2b2b;
+}
+.sn_buy_box .buy_type_index_touzhu .touzhu_btn a.last {
+	margin-right:0;
+}
+.sn_buy_box .buy_type_index_touzhu .touzhu_btn a:hover {
+	color:#2b2b2b;
+}
+.sn_buy_box .buy_type_index_touzhu .touzhu_btn a span, a.buttonA span {
+	float:left;
+	height:18px;
+	background:url(../images/sn_caipiao.png) no-repeat right -52px;
+	padding-right:9px;
+	cursor:pointer;
+}
+.dlt_buy_box .three_time {
+	position:absolute;
+	top:17px;
+	right:218px;
+	background:url(../images/sn_caipiao.png) no-repeat 0 -134px;
+	height:15px;
+	width:91px;
+	text-indent:-99999em;
+	overflow:hidden;
+}
+.sn_buy_lottery_box .dlt_buy_box .buy_type_title_index h3 {
+	background-position:-50px 0;
+}
+.ssxw_buy_box .buy_type_index_touzhu {
+	width:210px;
+}
+.ssxw_buy_box .buy_type_index_touzhu a.touzhu_now {
+	float:left;
+	margin:0 5px 7px 0;
+	width:99px;
+	height:31px;
+	background:url(../images/sn_caipiao.png) no-repeat -1px -149px;
+}
+.ssxw_buy_box .buy_type_index_touzhu a.more_touzhu {
+	float:left;
+	margin-right:0 0 7px 0;
+	width:99px;
+	height:31px;
+	background:url(../images/sn_caipiao.png) no-repeat -101px -149px;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+.ssxw_buy_box a.buttonA {
+	float:none;
+	display:inline-block;
+	margin-left:20px;
+	line-height:18px;
+}
+.ssxw_buy_box a.buttonA span {
+	float:none;
+	display:inline-block;
+}
+.sn_buy_box .buy_type_index_ball {
+	margin-bottom:7px;
+}
+.sn_buy_box .buy_type_index_cur_money p {
+	line-height:1.8;
+}
+.sn_buy_box .ssxw_buy_tag li {
+	position:relative;
+	float:left;
+	width:56px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	background:#ECECEC;
+	margin-right:4px;
+	cursor:pointer;
+}
+.sn_buy_box .ssxw_buy_tag li.cur {
+	background:#BD0E0E;
+	color:#fff;
+}
+.sn_buy_box .ssxw_buy_tag li.cur .arrow {
+	display:block;
+	position:absolute;
+	display:block;
+	height:0px;
+	line-height:0px;
+	top:22px;
+	right:22px;
+	border-style:solid;
+	border-width:4px 4px 0;
+	border-color: #fff;
+	border-top-color:#ba2636;
+	width:0;
+}
+.analysis-title {
+	background:url(fxgj_title.png) no-repeat 0 5px;
+}

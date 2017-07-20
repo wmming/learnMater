@@ -1,0 +1,266 @@
+<!DOCTYPE >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>登录 - 中文互联网最强大的分享按钮和分享工具</title>
+    <link rel="shortcut icon" href="http://www.bshare.cn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="iframeLogin_data/bshare2.css" type="text/css">
+    <style type="text/css">
+.checkCode { color: #666!important; font-size: 12px; }
+
+
+
+#msg { text-align: center; font-size: 12px; border: 1px solid red; background: #FFD9D9; padding: 2px; }
+.connectButton { cursor: pointer; }
+.help-popup-img { margin-bottom: 0; *margin-bottom: 2px; _margin-bottom: 0; }
+.bTextbox24 { width: 160px; }
+.fieldIndent { width: 137px; }
+.fieldIndent2 { width: 142px; width: 141px\9; *width: 137px; }
+
+        
+        
+    </style>
+    <script type="text/javascript" charset="utf-8" src="%E5%88%86%E4%BA%AB%E5%88%B0%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E4%BB%A3%E7%A0%81,%E5%88%86%E4%BA%AB%E5%88%B0%E5%90%84%E5%A4%A7%E7%BD%91%E7%AB%99%E6%8C%89%E9%92%AE_%E4%B8%80%E8%88%AC%E7%BD%91%E7%AB%99-bShare%E5%AE%89%E8%A3%85_files/jquery-1.js"></script>
+</head>
+<body>
+<div style="display:block;font-size:11pt">
+    <div class="clear spacer10"></div>
+    <form novalidate="novalidate" id="loginAction" action="/iframeLogin;jsessionid=FE4DD2040F23DB6F146CD511F756471A?service=http%3A%2F%2Fwww.bshare.cn%2Fauthentication&amp;targetUrl=http%3A%2F%2Fwww.bshare.cn%2FiframeLoginSuccess&amp;enableOauth=true" method="post">
+        <fieldset>
+            
+            <div class="clear spacer10"></div>
+            <div class="fieldWrap">
+                
+
+                
+                <div class="bInputLabel">账　户
+                <span title="您可以输入用户名或email邮箱登录。" class="help-popup-img"></span>
+                </div>
+                <input autocomplete="off" required="required" maxlength="50" id="username" name="username" class="bTextbox24 bUsername" tabindex="1">
+                
+            </div>
+            <div class="clear spacer5"></div>
+            <div class="fieldWrap">
+                <div class="bInputLabel">密　码
+                <span title="请输入您的账户密码。" class="help-popup-img"></span>
+                </div>
+                <input required="required" id="password" name="password" maxlength="30" tabindex="2" value="" class="bTextbox24" type="password">
+            </div>
+            <div class="clear spacer5"></div>
+            <div class="fieldWrap">
+                <div class="bInputLabel">验证码
+                <span title="请输入验证码" class="help-popup-img"></span>
+                </div>
+                <input value="请输入验证码" required="required" maxlength="6" tabindex="3" name="checkCode" placeholder="请输入验证码" class="bTextbox24 checkCode bsPlaceholder" type="text">
+            </div>
+            <div class="clear"></div>
+            <div class="fieldWrap">
+                <div class="fieldIndent left">&nbsp;</div>
+                
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    #checkCodeDiv { height: 20px; line-height: 20px; padding: 5px 0; display: inline-block; }
+    
+	
+		#checkCodeImg { float: left;height: 17px;padding-top: 3px;}
+	
+	
+	#refreshCode { color: #999999; text-decoration: none; font-size: 14px; height: 20px; line-height: 20px; margin-left:5px; }
+	#refreshCode:hover { text-decoration: underline; }
+</style>
+
+<div id="checkCodeDiv">
+	<img src="iframeLogin_data/checkCode.jpg" alt="验证码" id="checkCodeImg">
+	<a href="#" id="refreshCode">换一张</a>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+	var checkCodeUrl = "http://one.bshare.cn/checkCode";
+    function refreshCodeEvent() {
+    	var requestUrl = checkCodeUrl + "?" + new Date().getTime();
+        $("#checkCodeImg").attr("src", requestUrl);
+    } 
+    
+	$(function() {
+		$("#refreshCode").click(function() {
+			refreshCodeEvent();
+			return false;
+		});
+	});
+</script>
+
+            </div>
+            <div class="clear spacer5"></div>
+            <div class="row check">
+                <div class="fieldIndent2 left">&nbsp;</div>
+                <input name="rememberMe" id="rememberMe" value="true" checked="checked" type="checkbox"> <label for="rememberMe">记住我的信息</label>
+            </div>
+            <div class="clear spacer5"></div>
+            <div class="fieldIndent2 left">&nbsp;</div>
+            <input name="lt" value="LT-213445-ywcljFNad4LUDWsgMlhrfgY6tP3MeL" type="hidden">
+            <input name="execution" id="execution" value="e1s1" type="hidden">
+            <input name="unRememberme" id="unRememberme" value="false" type="hidden">
+            <input name="_eventId" value="submit" type="hidden">
+            <input name="service" id="service" value="http://www.bshare.cn/authentication" type="hidden">
+            
+            <input tabindex="4" name="submit" accesskey="l" id="buttonLogin" class="
+                        
+                        
+                        bButton-orange" style="font-weight:bold;padding:6px 19px;width:140px;*border:0 none!important;" value="登录" type="submit">
+        </fieldset>
+    </form>
+    
+    
+    <div class="clear spacer10" style="border-bottom:1px solid #aaa;"></div>
+    <div class="clear spacer10"></div>
+   
+    <div style="padding:0">
+        <div class="
+            
+            text-orange
+        ">你也可以通过以下账号登录bShare</div>
+        <div class="clear spacer10"></div>
+        
+        <img id="qzone_login_image" class="connectButton qzone_login_image" src="iframeLogin_data/qzone.gif" alt="">
+        <img id="xn_login_image" class="connectButton xn_login_image" src="iframeLogin_data/renren1.gif" alt="">
+        <img id="kaixin_login_image" class="connectButton kaixin_login_image" src="iframeLogin_data/kaixin001.gif" alt="">
+        <img id="tencent_login_image" class="connectButton tencent_login_image" src="iframeLogin_data/tencent.gif" alt="">
+
+        <div class="clear spacer1"></div>
+
+        <img id="sina_login_image" class="connectButton sina_login_image" src="iframeLogin_data/sina.gif" alt="">
+        <img id="sohu_login_image" class="connectButton sohu_login_image" src="iframeLogin_data/sohu.gif" alt="">
+        <img id="netease_login_image" class="connectButton netease_login_image" src="iframeLogin_data/netease.gif" alt="">
+        <img id="tianya_login_image" class="connectButton tianya_login_image" src="iframeLogin_data/tianya.gif" alt="">
+        <!--
+        <img id="douban_login_image" class="connectButton douban_login_image hidden" src="http://static.bshare.cn/images/connector/douban.gif" alt=""/>
+        -->
+        <div class="clear spacer1"></div>
+        <!--
+        <img id="taobao_login_image" class="connectButton taobao_login_image" src="http://static.bshare.cn/images/connector/taobao.gif" alt=""/>
+        -->
+        <div class="clear"></div>
+    </div>
+    
+</div>
+<div class="clear"></div>
+
+<script type="text/javascript" charset="utf-8" src="%E5%88%86%E4%BA%AB%E5%88%B0%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E4%BB%A3%E7%A0%81,%E5%88%86%E4%BA%AB%E5%88%B0%E5%90%84%E5%A4%A7%E7%BD%91%E7%AB%99%E6%8C%89%E9%92%AE_%E4%B8%80%E8%88%AC%E7%BD%91%E7%AB%99-bShare%E5%AE%89%E8%A3%85_files/jquery_003.js"></script>
+<script type="text/javascript" charset="utf-8" src="%E5%88%86%E4%BA%AB%E5%88%B0%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E4%BB%A3%E7%A0%81,%E5%88%86%E4%BA%AB%E5%88%B0%E5%90%84%E5%A4%A7%E7%BD%91%E7%AB%99%E6%8C%89%E9%92%AE_%E4%B8%80%E8%88%AC%E7%BD%91%E7%AB%99-bShare%E5%AE%89%E8%A3%85_files/webtoolkit.js"></script>
+<script type="text/javascript" charset="utf-8">
+var isSubmitting = false;
+function loginOauth(platformName) {
+    window.open("oauth/authentication?site=" + platformName + "&service=http://www.bshare.cn/authentication&login=true&iframe=true");
+    return false;
+}
+function encryptEvent() {
+    // encrypt the password for sending:
+    var pw = SHA1($('#password').val());
+    $('#password').val(pw);
+}
+function placeHolderBlank() {
+    var input = $('[placeholder]');
+    if (input.val() == input.attr('placeholder')) {
+        input.val('');
+    }       
+}
+function initPlaceholderEvent() {
+    // placeholder code (remove when all browsers support HTML5)
+    $('[placeholder]').focus(function() {
+        var input = $(this);
+        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+            input.val('');
+            input.removeClass('bsPlaceholder');
+        }
+    }).blur(function() {
+        var input = $(this);
+        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+            input.addClass('bsPlaceholder');
+            input.val(input.attr('placeholder'));
+        }
+    }).blur();
+}
+function loginSuccess(ticket) {
+    var url = "http://www.bshare.cn/authentication";
+    if (url.indexOf("?") >= 0) {
+        url += "&";
+    } else {
+        url += "?";
+    }
+    url += "ticket=" + ticket;
+    if ("http://www.bshare.cn/iframeLoginSuccess" != "") {
+        url += "&targetUrl=" + encodeURIComponent("http://www.bshare.cn/iframeLoginSuccess");
+    }
+    window.location.href = url;
+}
+$(function() {
+    $(".sina_login_image").click(function(){return loginOauth("sinaminiblog");});
+    $(".douban_login_image").click(function(){return loginOauth("douban");});
+    $(".sohu_login_image").click(function(){return loginOauth("sohuminiblog");});
+    $(".netease_login_image").click(function(){return loginOauth("neteasemb");});
+    $(".tencent_login_image").click(function(){return loginOauth("qqmb");}); 
+    $(".xn_login_image").click(function(){return loginOauth("renren");});
+    $(".qzone_login_image").click(function(){return loginOauth("qzone");});
+    $(".kaixin_login_image").click(function(){return loginOauth('kaixin001');});
+    $(".taobao_login_image").click(function(){return loginOauth('taobao');});
+    $(".tianya_login_image").click(function(e){return loginOauth('tianya');});
+
+    initPlaceholderEvent();
+    $.tools.validator.localize('zh', {
+        '*'         : '无效的值。',
+        ':email'    : '请输入有效的邮件地址。',
+        ':number'   : '请输入一个数字。',
+        ':url'      : '请输入有效的链接。',
+        '[max]'     : '此数字必须小于$1.',
+        '[min]'     : '此数字必须大于$1.',
+        '[required]': '此域不能为空。'
+    });
+    $("#buttonLogin").click(function() {
+        isSubmitting = false;
+    });  
+    $("#loginAction").validator({
+        lang: 'zh',
+        messageClass: 'errorInput',
+        onBeforeValidate: function(e) {
+            // check if user entered username:
+            if ($("#username").val() == '邮箱') {
+                $('#username').val("");
+            }
+            placeHolderBlank();
+        },
+        onFail: function() {
+            $('#password').val('');
+            isSubmitting = true;
+        },
+        onSuccess: function() {
+            if (isSubmitting) {
+                return false;
+            }
+            encryptEvent();
+            isSubmitting = true;
+        }
+    });
+    $("#rememberMe").live('click',function(e){
+        if ($("#rememberMe").attr("checked") == 'checked') {
+            $("#unRememberme").val(false);
+        } else {
+            $("#unRememberme").val(true);
+        }
+    });
+    //there is a flowExecutionKey conflict with iframeRegister the first time
+    //need to reload to get a new flowExecutionKey
+    /* if ($("#execution").val() == 'e1s1') {
+        window.location.reload();
+    } */
+});
+</script>
+
+
+</body></html>

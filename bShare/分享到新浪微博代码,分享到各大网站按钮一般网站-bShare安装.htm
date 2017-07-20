@@ -1,0 +1,1379 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0083)http://www.bshare.cn/help/installAction;jsessionid=C834F88D97E8F92ED7606E756DE99B9E -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">     
+<META http-equiv="Content-Language" content="zh">     
+<META name="description" content="bShare是中国最强大的社会化图文分享到代码工具！提供分享到新浪微博代码,分享到各大网站按钮,分享到一般网站,BBS,CMS,淘宝,博客,邮件模板平台,同时您可以复制代码到您的模板,按钮将在所有网页自动出现."> 
+    
+<META name="keywords" content="">	 
+<META name="author" content="Buzzinate">     
+<TITLE>分享到新浪微博代码,分享到各大网站按钮|一般网站-bShare安装</TITLE>     <!-- Be aware: This will be replaced in build script --> 
+    <LINK href="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/bshare2.css" rel="stylesheet" 
+type="text/css">     
+<STYLE type="text/css">
+    	.top-menu-popup .bLink { color: #333; }
+    </STYLE>
+         <LINK href="http://www.bshare.cn/favicon.ico" rel="icon" type="image/x-icon"> 
+    <LINK href="http://www.bshare.cn/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	     
+<SCRIPT type="text/javascript" charset="utf-8">
+		var BSHARE_WEBSITE_HOST = "http://www.bshare.cn/";
+		var BSHARE_BUTTON_HOST = "http://bshare.optimix.asia/";
+		var BSHARE_STATIC_HOST = "http://static.bshare.cn/"; // used by bshare-web-common.js?v=20150707 and unitpngfix.js
+		var bookmarkletOff = false;
+	</SCRIPT>
+	 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery.tools.ui.min.1.2.6.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery.bgiframe.min.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	 <!-- Be aware: This will be replaced in build script -->	 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/bshare-web-common.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/ajaxLogout.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	 <!--[if lt IE 7]>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/libs/unitpngfix.js"></script>
+    <![endif]--> 
+        
+<STYLE type="text/css">
+    	.identifyImg { width: 14px; margin-bottom: -3px; }
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17937"></HEAD> 
+<BODY style="background: rgb(245, 245, 245);">
+<DIV class="container-center"><NOSCRIPT>			&lt;span 
+style="color:red;"&gt;&lt;strong&gt;此页面使用Javascript。请在您的浏览器中启用Javascript，以浏览全页面。谢谢！&lt;/strong&gt;&lt;/span&gt;
+			&lt;div class="spacer10"&gt;&lt;/div&gt;		 </NOSCRIPT>	 </DIV>
+<STYLE type="text/css">
+#topMenu { border-bottom: 1px solid #e5e5e5; background: #f5f5f5; box-shadow: 1px 1px 3px #efefef; font-size: 12px; line-height: 30px; }
+</STYLE>
+ 
+<DIV id="topMenu">
+<DIV class="container-center" style="overflow: hidden;">
+<DIV class="topSubSite left"><A title="微积分" class="bLinkDark" href="http://points.bshare.cn/" 
+target="_blank">微积分</A> |             <A title="乐知推荐插件" class="bLinkDark" href="http://www.lezhi.me/" 
+target="_blank">乐知推荐插件</A>         </DIV>
+<DIV id="mainTopNavDiv" style="background: rgb(245, 245, 245); padding: 0px 15px; height: 28px; text-align: right; color: rgb(0, 0, 0); line-height: 28px; overflow: hidden; font-size: 12px;">
+<DIV class="right">
+<TABLE class="topMain">
+  <TBODY>
+  <TR>
+    <TD><A title="立即注册" class="bLink" style="color: red;" href="http://www.bshare.cn/register">立即注册</A></TD>
+    <TD>|</TD>
+    <TD><A title="帮助" class="bLink" style="color: rgb(0, 0, 0);" href="http://www.bshare.cn/help">帮助</A></TD>
+    <TD>|</TD>
+    <TD><A title="登录" class="bLink" style="color: rgb(0, 0, 0); font-size: 14px; font-weight: bold;" 
+      href="http://www.bshare.cn/login">登录</A></TD></TR></TBODY></TABLE></DIV>
+<DIV class="clear"></DIV></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV><!-- AUTHORITIES POPUP --> <!-- AUTHORITIES-POPUP-END --> <!-- SCRIPTS-START --> 
+<SCRIPT type="text/javascript" charset="utf-8">
+    function oauthLoginSuccess(type) {
+        window.location.href = "loginAction";
+    }
+    
+    $(function() {
+        $("#bshare_logout").live("click", function(e) {
+            passport_ajax_logout("http://one.bshare.cn");
+            window.location.href='/logout';
+            return false;
+        });
+        
+        
+    });
+</SCRIPT>
+	     
+<DIV class="clear"></DIV>
+<STYLE type="text/css">
+.top-menu-popup .bLink { color: #333; }
+</STYLE>
+ 
+<DIV style="background: rgb(255, 255, 255); min-width: 980px;">
+<DIV class="spacer30"></DIV>
+<DIV class="container-center">
+<DIV class="left" style="width: 200px;"><A title="bShare.cn" href="http://www.bshare.cn/"><IMG 
+alt="bShare.cn" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/bshare-logo-main.gif"> 
+                            </A>             
+<DIV class="clear"></DIV></DIV>
+<DIV class="right" style="padding-top: 10px;">
+<DIV class="right" style="margin-left: 5px;"><A class="top-button-single" href="http://www.bshare.cn/blog" 
+target="_blank">博客</A>		     </DIV>
+<DIV class="right" style="margin-left: 5px;">
+<DIV class="top-button" onclick="document.location='/help';">
+<DIV>帮助</DIV>
+<DIV class="arrow-down"></DIV></DIV>
+<DIV class="top-menu-popup">
+<DIV><A title="注册" class="bLink" 
+href="http://www.bshare.cn/help/register">注册</A></DIV>
+<DIV><A title="安装bShare" class="bLink" href="http://www.bshare.cn/help/installImage">安装bShare</A></DIV>
+<DIV><A title="分享按钮自定义" class="bLink" href="http://www.bshare.cn/help/apiJsParams">分享按钮自定义</A></DIV>
+<DIV><A title="bShare API" class="bLink" href="http://www.bshare.cn/help/apiClientJsPage">bShare 
+API</A></DIV>
+<DIV><A title="分享平台代码参考" class="bLink" href="http://www.bshare.cn/help/platformNames">分享平台代码参考</A></DIV>
+<DIV><A title="分享优化功能设置" class="bLink" href="http://www.bshare.cn/help/shareSettings">分享优化功能设置</A></DIV>
+<DIV><A title="常见问题" class="bLink" 
+href="http://www.bshare.cn/help/general">常见问题</A></DIV>
+<DIV><A title="使用建议" class="bLink" 
+href="http://www.bshare.cn/bestPractices">使用建议</A></DIV>
+<DIV><A title="范例" class="bLink" 
+href="http://www.bshare.cn/integrations">范例</A></DIV><!-- Partner Links -->		    
+         
+<DIV><A title="站长资讯" class="bLink" href="http://www.admin5.com/browse/177/index.shtml" 
+target="_blank">站长资讯		                 <IMG style="margin: 0px 0px 3px 3px;" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/icon_new_window.gif">		             
+</A></DIV></DIV></DIV>
+<DIV class="right" style="margin-left: 5px;"><A class="top-button-single" href="http://www.bshare.cn/analytics">数据统计</A>
+		        		        		     </DIV>
+<DIV class="right" style="margin-left: 5px;">
+<DIV class="top-button" onclick="document.location='/products';">
+<DIV>bShare产品</DIV>
+<DIV class="arrow-down"></DIV></DIV>
+<DIV class="top-menu-popup">
+<DIV><A title="bShare" class="bLink" 
+href="http://www.bshare.cn/products/bshare">bShare</A></DIV>
+<DIV><A title="bShare高级" class="bLink" href="http://www.bshare.cn/products/premiumServices">bShare高级</A></DIV>
+<DIV><A title="bShare电商" class="bLink" href="http://ec.bshare.cn/" target="_blank">bShare电商</A></DIV>
+<DIV><A title="微积分" class="bLink" href="http://points.bshare.cn/" target="_blank">微积分</A></DIV>
+<DIV><A title="乐知推荐插件" class="bLink" href="http://lz.bshare.cn/" 
+target="_blank">乐知推荐插件</A></DIV>
+<DIV><A title="bShare图片分享" class="bLink" href="http://www.bshare.cn/products/imageShare">bShare图片分享</A></DIV>
+<DIV><A title="bShare划词分享" class="bLink" href="http://www.bshare.cn/products/bshareDrag">bShare划词分享</A></DIV>
+<DIV><A title="bShare视频分享" class="bLink" href="http://www.bshare.cn/products/videoShare">bShare视频分享</A></DIV>
+<DIV><A title="bShare书签" class="bLink" href="http://www.bshare.cn/products/bookmark">bShare书签</A></DIV>
+<DIV><A title="bShare一键通" class="bLink" href="http://www.bshare.cn/products/bsync">bShare一键通</A></DIV>
+<DIV><A title="bShare Mobile SDK" class="bLink" href="http://www.bshare.cn/products/bshareMobileSDK">bShare 
+Mobile SDK</A></DIV>
+<DIV><A title="bURL" class="bLink" 
+href="http://www.bshare.cn/products/burl">bURL</A></DIV><!-- <div><a title="bShare热文推荐" class="bLink" href="/products/bshareRecomm">bShare热文推荐</a></div> -->
+		             <!-- <div><a title="乐知" class="bLink" href="/products/lezhi">乐知</a></div>  -->
+		             <!-- 
+		            <div><a title="bShare Pro" class="bLink" href="/bsharePro">bShare Pro</a></div>
+		            <div><a title="bShare企业版" class="bLink" href="/bshareEnterprise">bShare企业版</a></div>
+		            -->
+		         </DIV></DIV>
+<DIV class="right" style="margin-left: 5px;">
+<DIV class="top-button" onclick="document.location='/intro';">
+<DIV>bShare介绍</DIV>
+<DIV class="arrow-down"></DIV></DIV>
+<DIV class="top-menu-popup">
+<DIV><A title="什么是bShare?" class="bLink" 
+href="http://www.bshare.cn/intro">什么是bShare?</A></DIV>
+<DIV><A title="bShare特色" class="bLink" 
+href="http://www.bshare.cn/intro/reasons">bShare特色</A></DIV>
+<DIV><A title="支持的平台" class="bLink" 
+href="http://www.bshare.cn/intro/services">支持的平台</A></DIV><!-- <div><a title="谁在使用bShare?" class="bLink" href="/intro/bshareSites">谁在使用bShare?</a></div> -->
+		             
+<DIV><A title="合作伙伴" class="bLink" 
+href="http://www.bshare.cn/partners">合作伙伴</A></DIV>
+<DIV><A title="展览厅" class="bLink" 
+href="http://www.bshare.cn/gallery">展览厅</A></DIV>
+<DIV class="hidden"><A title="实验室" class="bLink" href="http://www.bshare.cn/labs">实验室</A></DIV><!-- 
+		            <div><a title="自定义按钮" class="bLink" href="/introCustomize">自定义按钮</a></div>
+		            -->
+		         </DIV></DIV>
+<DIV class="right">
+<DIV class="top-button" onclick="document.location='/help/install';">
+<DIV>bShare安装</DIV>
+<DIV class="arrow-down"></DIV></DIV>
+<DIV class="top-menu-popup">
+<DIV><A title="一般网站" class="bLink" 
+href="http://www.bshare.cn/help/install">一般网站</A></DIV>
+<DIV><A title="BBS" class="bLink" 
+href="http://www.bshare.cn/help/installBbs">BBS</A></DIV>
+<DIV><A title="CMS" class="bLink" 
+href="http://www.bshare.cn/help/installCms">CMS</A></DIV>
+<DIV><A title="电子商务" class="bLink" 
+href="http://www.bshare.cn/help/installEc">电子商务</A></DIV>
+<DIV><A title="淘宝" class="bLink" 
+href="http://www.bshare.cn/help/installTaobao">淘宝</A></DIV>
+<DIV class="hidden"><A title="电子商务" class="bLink" href="http://www.bshare.cn/help/installEcomm">电子商务</A></DIV>
+<DIV><A title="博客" class="bLink" 
+href="http://www.bshare.cn/help/installBlog">博客</A></DIV>
+<DIV><A title="邮件模板" class="bLink" 
+href="http://www.bshare.cn/help/installEmail">邮件模板</A></DIV>
+<DIV><A title="乐知推荐插件" class="bLink" href="http://www.lezhi.me/get?uuid=nologin" 
+target="_blank">乐知推荐插件</A></DIV></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV id="top-bookmarklet" 
+style="top: 65px; display: none; position: absolute;"><A style='background: url("http://static.bshare.cn/images/top-bookmarklet.png") no-repeat; width: 80px; height: 120px; text-indent: -9999px; display: block;' 
+href="javascript:var%20d=document;var%20b=d.body;if(b&amp;&amp;!document.xmlVersion){if(!d.getElementById('bsBox')){void(y=document.createElement('script'));void(y.src='http://static.bshare.cn/b/bookmark.js#lang=zh');void(b.appendChild(y));}else{bShare.show();}}">bShare书签</A></DIV><!-- SCRIPTS -->
+		 
+<SCRIPT type="text/javascript" charset="utf-8">
+		    $(function() {
+		        if (!$.browser.msie && !bookmarkletOff) {
+		            $(window).resize(function() {
+		                var ww = $(window).width();
+		                if (ww < 1180) {
+		                    $("#top-bookmarklet").hide();
+		                } else {
+		                    $("#top-bookmarklet").show();
+		                    $("#top-bookmarklet").css("right", (ww-980)/2 - 100);
+		                }
+		            }).resize();
+		        }
+		    });
+		</SCRIPT>
+                 
+<DIV class="clear spacer20"></DIV></DIV></DIV>
+<DIV class="clear"></DIV>
+<DIV class="container-stripe">
+<DIV class="container-stripe-image">
+<DIV class="left floatFix" id="breadCrumbs"></DIV></DIV>
+<DIV class="clear"></DIV></DIV><!-- STATUS MESSAGES START --> 
+<DIV align="center" id="status-messages-pdiv" style="margin: 0px auto 5px; width: 850px; height: 26px; visibility: hidden; position: relative; z-index: 100;">
+<DIV class="status-messages bMessages" id="status-messages"></DIV>
+<DIV class="bMessages" id="status-messages-div" style="display: none;"></DIV>
+<DIV class="bMessages" id="field-error-messages-div" 
+style="display: none;"></DIV>
+<DIV class="clear"></DIV></DIV><!-- STATUS MESSAGES END -->                 
+<DIV class="clear"></DIV>
+<DIV class="container-center" style="margin-top: -30px;">
+<META name="description" content="bShare是中国最强大的社会化图文分享到代码工具！提供分享到新浪微博代码,分享到各大网站按钮,分享到一般网站,BBS,CMS,淘宝,博客,邮件模板平台,同时您可以复制代码到您的模板,按钮将在所有网页自动出现."> 
+<META name="keywords" content=""> 
+<STYLE>
+    .preview, .previewPlus { width: 419px; height: 220px; background: url('http://static.bshare.cn/images/bshare-preview.jpg') no-repeat; }
+    .previewPlus { background: url('http://static.bshare.cn/images/bshareplus-preview.jpg') no-repeat; }
+    .spHide {background:url(http://static.bshare.cn/images/arrow-down-orange.gif) no-repeat 95% 50%; border-bottom:1px solid #ff5c00 !important;}
+    .spShow {background:url(http://static.bshare.cn/images/arrow-up-orange.gif) no-repeat 95% 50%; border-bottom:1px solid #f5f5f5 !important;}
+    .sortableSp li {width:106px;}
+</STYLE>
+ <LINK href="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/tabs2.css" rel="stylesheet" 
+type="text/css" media="all"> <LINK href="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery-ui-css-1.8.2.css" 
+rel="stylesheet" type="text/css" media="all"> 
+<DIV class="module-white-grey module-full div-shadow-5">
+<STYLE>
+	.websiteTypeSelect {text-align:center;color:#666;display:block;font-size:12px;border:1px solid #ddd;width:70px;padding:15px 0;margin-right:15px;text-decoration:none;}
+	.websiteTypeSelect:hover, .websiteTypeSelect.selected { border:1px solid #f60;}
+</STYLE>
+ 
+<DIV style="padding: 0px 20px;">
+<H1 class="heading3 text-orange"><SPAN class="hidden" 
+id="installStepOne">1.&nbsp;</SPAN>选择平台</H1>
+<DIV class="clear spacer15"></DIV><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeWww" href="http://www.bshare.cn/help/install"><IMG alt="一般网站" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-www.png">		 
+<DIV class="spacer10"></DIV>		一般网站	 </A><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeBbs" href="http://www.bshare.cn/help/installBbs"><IMG alt="BBS" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-bbs.png">		 
+<DIV class="spacer10"></DIV>BBS	 </A><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeCms" href="http://www.bshare.cn/help/installCms"><IMG alt="CMS" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-cms.png">		 
+<DIV class="spacer10"></DIV>		CMS	 </A><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeEc" href="http://www.bshare.cn/help/installEc"><IMG alt="电子商务" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-ecomm.png">		 
+<DIV class="spacer10"></DIV>电子商务	 </A><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeTaobao" href="http://www.bshare.cn/help/installTaobao"><IMG alt="淘宝" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-taobao.png">		 
+<DIV class="spacer10"></DIV>		淘宝	 </A><A class="hidden" id="websiteTypeEcomm" 
+href="http://www.bshare.cn/help/installEcomm"><IMG alt="电子商务" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-ecomm.png">
+		 
+<DIV class="spacer10"></DIV>		电子商务	 </A>	 <A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeBlog" href="http://www.bshare.cn/help/installBlog"><IMG alt="博客" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-blog.png">		 
+<DIV class="spacer10"></DIV>		博客	 </A><A class="websiteTypeSelect div-rounded-5 div-gradient-light-top left" 
+id="websiteTypeEmail" href="http://www.bshare.cn/help/installEmail"><IMG alt="邮件模板" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/install-email.png">		 
+<DIV class="spacer10"></DIV>		邮件模板	 </A>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear spacer20"></DIV>
+<DIV class="div-gradient-light-top" style="height: 20px;"></DIV>
+<DIV style="padding: 0px 20px;">
+<H1 class="heading3 text-orange">2. 按钮样式</H1>
+<DIV class="clear spacer15"></DIV>
+<P style="color: rgb(102, 102, 102); font-size: 14px;">以下是您所选的按钮样式:</P>
+<DIV class="clear spacer20"></DIV>
+<DIV class="left" style="width: 75px; color: rgb(102, 102, 102); font-size: 14px;">预览： 
+</DIV>
+<DIV class="right" id="previewDiv" style="background: rgb(255, 255, 255); width: 860px;">
+<DIV class="bshare-custom"><A title="分享到QQ空间" class="bshare-qzone"></A><A title="分享到新浪微博" 
+class="bshare-sinaminiblog"></A><A title="分享到人人网" class="bshare-renren"></A><A 
+title="分享到腾讯微博" class="bshare-qqmb"></A><A title="分享到网易微博" class="bshare-neteasemb"></A><A 
+title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></A><SPAN 
+class="BSHARE_COUNT bshare-share-count">0</SPAN></DIV>
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/buttonLite.js" type="text/javascript" charset="utf-8"></SCRIPT>
+
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/bshareC0.js" type="text/javascript" charset="utf-8"></SCRIPT>
+                                 </DIV>
+<DIV class="clear spacer15"></DIV>
+<DIV class="left" style="width: 78px;">&nbsp;</DIV>
+<DIV class="hidden" id="psDiv"><A class="bLinkU spHide" id="setPlatformsLink" 
+style="padding: 2px 17px 2px 4px; border: 1px solid rgb(255, 92, 0); border-image: none; font-size: 12px; background-color: rgb(245, 245, 245);" 
+href="javascript:;">按钮排序</A>             
+<DIV class="clear"></DIV>
+<DIV class="hidden" id="setPlatformsDiv" style="padding: 5px 0px; margin-top: 0px; border-top-color: rgb(255, 92, 0); border-bottom-color: rgb(255, 92, 0); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(245, 245, 245);">
+<DIV id="pSortable">
+<UL class="sortableSp left maxHeight110" id="pSortableSelected" style="padding: 3px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 930px; overflow: auto; min-height: 22px;"><!--
+                            <li id="86" name="qqmb" class="ui-state-default"><label id="86" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qqmb.gif) no-repeat 0% 50%;padding-left:20px;">腾讯微博</span></label></li>
+                        
+                            <li id="998" name="bsharesync" class="ui-state-default"><label id="998" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/bsharesync.gif) no-repeat 0% 50%;padding-left:20px;">一键通</span></label></li>
+                        
+                            <li id="24" name="sinaminiblog" class="ui-state-default"><label id="24" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sinaminiblog.gif) no-repeat 0% 50%;padding-left:20px;">新浪微博</span></label></li>
+                        
+                            <li id="75" name="qzone" class="ui-state-default"><label id="75" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qzone.gif) no-repeat 0% 50%;padding-left:20px;">QQ空间</span></label></li>
+                        
+                            <li id="157" name="189share" class="ui-state-default"><label id="157" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/189share.gif) no-repeat 0% 50%;padding-left:20px;">手机快传</span></label></li>
+                        
+                            <li id="77" name="sohuminiblog" class="ui-state-default"><label id="77" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sohuminiblog.gif) no-repeat 0% 50%;padding-left:20px;">搜狐微博</span></label></li>
+                        
+                            <li id="2" name="renren" class="ui-state-default"><label id="2" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/renren.gif) no-repeat 0% 50%;padding-left:20px;">人人网</span></label></li>
+                        
+                            <li id="152" name="xinhuamb" class="ui-state-default"><label id="152" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xinhuamb.gif) no-repeat 0% 50%;padding-left:20px;">新华微博</span></label></li>
+                        
+                            <li id="99" name="tianya" class="ui-state-default"><label id="99" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/tianya.gif) no-repeat 0% 50%;padding-left:20px;">天涯</span></label></li>
+                        
+                            <li id="114" name="shouji" class="ui-state-default"><label id="114" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/shouji.gif) no-repeat 0% 50%;padding-left:20px;">手机</span></label></li>
+                        
+                            <li id="108" name="ifengmb" class="ui-state-default"><label id="108" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/ifengmb.gif) no-repeat 0% 50%;padding-left:20px;">凤凰微博</span></label></li>
+                        
+                            <li id="84" name="neteasemb" class="ui-state-default"><label id="84" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/neteasemb.gif) no-repeat 0% 50%;padding-left:20px;">网易微博</span></label></li>
+                        
+                            <li id="97" name="qqxiaoyou" class="ui-state-default"><label id="97" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qqxiaoyou.gif) no-repeat 0% 50%;padding-left:20px;">朋友网</span></label></li>
+                        
+                            <li id="1" name="kaixin001" class="ui-state-default"><label id="1" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/kaixin001.gif) no-repeat 0% 50%;padding-left:20px;">开心网</span></label></li>
+                        
+                            <li id="184" name="weixin" class="ui-state-default"><label id="184" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/weixin.gif) no-repeat 0% 50%;padding-left:20px;">微信</span></label></li>
+                        
+                            <li id="3" name="douban" class="ui-state-default"><label id="3" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/douban.gif) no-repeat 0% 50%;padding-left:20px;">豆瓣</span></label></li>
+                        
+                            <li id="181" name="qqim" class="ui-state-default"><label id="181" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qqim.gif) no-repeat 0% 50%;padding-left:20px;">QQ好友</span></label></li>
+                        
+                            <li id="121" name="peoplemb" class="ui-state-default"><label id="121" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/peoplemb.gif) no-repeat 0% 50%;padding-left:20px;">人民微博</span></label></li>
+                        
+                            <li id="73" name="baiduhi" class="ui-state-default"><label id="73" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/baiduhi.gif) no-repeat 0% 50%;padding-left:20px;">百度空间</span></label></li>
+                        
+                            <li id="161" name="youdaonote" class="ui-state-default"><label id="161" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/youdaonote.gif) no-repeat 0% 50%;padding-left:20px;">有道笔记</span></label></li>
+                        
+                            <li id="137" name="southmb" class="ui-state-default"><label id="137" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/southmb.gif) no-repeat 0% 50%;padding-left:20px;">南方微博</span></label></li>
+                        
+                            <li id="118" name="woshao" class="ui-state-default"><label id="118" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/woshao.gif) no-repeat 0% 50%;padding-left:20px;">我烧网</span></label></li>
+                        
+                            <li id="8" name="qqshuqian" class="ui-state-default"><label id="8" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qqshuqian.gif) no-repeat 0% 50%;padding-left:20px;">QQ书签</span></label></li>
+                        
+                            <li id="41" name="email" class="ui-state-default"><label id="41" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/email.gif) no-repeat 0% 50%;padding-left:20px;">电子邮件</span></label></li>
+                        
+                            <li id="72" name="taojianghu" class="ui-state-default"><label id="72" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/taojianghu.gif) no-repeat 0% 50%;padding-left:20px;">淘江湖</span></label></li>
+                        
+                            <li id="95" name="feixin" class="ui-state-default"><label id="95" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/feixin.gif) no-repeat 0% 50%;padding-left:20px;">飞信</span></label></li>
+                        
+                            <li id="51" name="itieba" class="ui-state-default"><label id="51" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/itieba.gif) no-repeat 0% 50%;padding-left:20px;">i贴吧</span></label></li>
+                        
+                            <li id="127" name="tuita" class="ui-state-default"><label id="127" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/tuita.gif) no-repeat 0% 50%;padding-left:20px;">推他</span></label></li>
+                        
+                            <li id="21" name="facebook" class="ui-state-default"><label id="21" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/facebook.gif) no-repeat 0% 50%;padding-left:20px;">Facebook</span></label></li>
+                        
+                            <li id="23" name="twitter" class="ui-state-default"><label id="23" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/twitter.gif) no-repeat 0% 50%;padding-left:20px;">Twitter</span></label></li>
+                        
+                            <li id="115" name="139mail" class="ui-state-default"><label id="115" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/139mail.gif) no-repeat 0% 50%;padding-left:20px;">139邮箱</span></label></li>
+                        
+                            <li id="146" name="pinterest" class="ui-state-default"><label id="146" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/pinterest.gif) no-repeat 0% 50%;padding-left:20px;">Pinterest</span></label></li>
+                        
+                            <li id="139" name="huaban" class="ui-state-default"><label id="139" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/huaban.gif) no-repeat 0% 50%;padding-left:20px;">花瓣</span></label></li>
+                        
+                            <li id="144" name="duitang" class="ui-state-default"><label id="144" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/duitang.gif) no-repeat 0% 50%;padding-left:20px;">堆糖</span></label></li>
+                        
+                            <li id="138" name="meilishuo" class="ui-state-default"><label id="138" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/meilishuo.gif) no-repeat 0% 50%;padding-left:20px;">美丽说</span></label></li>
+                        
+                            <li id="140" name="mogujie" class="ui-state-default"><label id="140" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mogujie.gif) no-repeat 0% 50%;padding-left:20px;">蘑菇街</span></label></li>
+                        
+                            <li id="141" name="ifengkb" class="ui-state-default"><label id="141" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/ifengkb.gif) no-repeat 0% 50%;padding-left:20px;">凤凰快博</span></label></li>
+                        
+                            <li id="9" name="sohubai" class="ui-state-default"><label id="9" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sohubai.gif) no-repeat 0% 50%;padding-left:20px;">搜狐白社会</span></label></li>
+                        
+                            <li id="117" name="waakee" class="ui-state-default"><label id="117" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/waakee.gif) no-repeat 0% 50%;padding-left:20px;">挖客</span></label></li>
+                        
+                            <li id="4" name="baiducang" class="ui-state-default"><label id="4" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/baiducang.gif) no-repeat 0% 50%;padding-left:20px;">百度搜藏</span></label></li>
+                        
+                            <li id="106" name="hexunmb" class="ui-state-default"><label id="106" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/hexunmb.gif) no-repeat 0% 50%;padding-left:20px;">和讯微博</span></label></li>
+                        
+                            <li id="15" name="bgoogle" class="ui-state-default"><label id="15" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/bgoogle.gif) no-repeat 0% 50%;padding-left:20px;">Google书签</span></label></li>
+                        
+                            <li id="83" name="clipboard" class="ui-state-default"><label id="83" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/clipboard.gif) no-repeat 0% 50%;padding-left:20px;">复制网址</span></label></li>
+                        
+                            <li id="147" name="miliao" class="ui-state-default"><label id="147" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/miliao.gif) no-repeat 0% 50%;padding-left:20px;">米聊</span></label></li>
+                        
+                            <li id="100" name="fanfou" class="ui-state-default"><label id="100" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/fanfou.gif) no-repeat 0% 50%;padding-left:20px;">饭否</span></label></li>
+                        
+                            <li id="71" name="msn" class="ui-state-default"><label id="71" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/msn.gif) no-repeat 0% 50%;padding-left:20px;">MSN</span></label></li>
+                        
+                            <li id="28" name="reddit" class="ui-state-default"><label id="28" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/reddit.gif) no-repeat 0% 50%;padding-left:20px;">Reddit</span></label></li>
+                        
+                            <li id="14" name="delicious" class="ui-state-default"><label id="14" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/delicious.gif) no-repeat 0% 50%;padding-left:20px;">Delicious</span></label></li>
+                        
+                            <li id="102" name="renmaiku" class="ui-state-default"><label id="102" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/renmaiku.gif) no-repeat 0% 50%;padding-left:20px;">人脉库</span></label></li>
+                        
+                            <li id="22" name="myspace" class="ui-state-default"><label id="22" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/myspace.gif) no-repeat 0% 50%;padding-left:20px;">MySpace</span></label></li>
+                        
+                            <li id="6" name="favorite" class="ui-state-default"><label id="6" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/favorite.gif) no-repeat 0% 50%;padding-left:20px;">收藏夹</span></label></li>
+                        
+                            <li id="13" name="xianguo" class="ui-state-default"><label id="13" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xianguo.gif) no-repeat 0% 50%;padding-left:20px;">鲜果网</span></label></li>
+                        
+                            <li id="110" name="ganniu" class="ui-state-default"><label id="110" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/ganniu.gif) no-repeat 0% 50%;padding-left:20px;">赶牛微博</span></label></li>
+                        
+                            <li id="29" name="linkedin" class="ui-state-default"><label id="29" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/linkedin.gif) no-repeat 0% 50%;padding-left:20px;">LinkedIn</span></label></li>
+                        
+                            <li id="7" name="sinavivi" class="ui-state-default"><label id="7" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sinavivi.gif) no-repeat 0% 50%;padding-left:20px;">新浪Vivi</span></label></li>
+                        
+                            <li id="47" name="renjian" class="ui-state-default"><label id="47" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/renjian.gif) no-repeat 0% 50%;padding-left:20px;">人间网</span></label></li>
+                        
+                            <li id="10" name="9dian" class="ui-state-default"><label id="10" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/9dian.gif) no-repeat 0% 50%;padding-left:20px;">豆瓣9点</span></label></li>
+                        
+                            <li id="82" name="cfol" class="ui-state-default"><label id="82" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/cfol.gif) no-repeat 0% 50%;padding-left:20px;">中金微博</span></label></li>
+                        
+                            <li id="60" name="diigo" class="ui-state-default"><label id="60" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/diigo.gif) no-repeat 0% 50%;padding-left:20px;">Diigo</span></label></li>
+                        
+                            <li id="85" name="ushi" class="ui-state-default"><label id="85" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/ushi.gif) no-repeat 0% 50%;padding-left:20px;">优士网</span></label></li>
+                        
+                            <li id="19" name="poco" class="ui-state-default"><label id="19" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/poco.gif) no-repeat 0% 50%;padding-left:20px;">Poco网</span></label></li>
+                        
+                            <li id="98" name="cyzone" class="ui-state-default"><label id="98" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/cyzone.gif) no-repeat 0% 50%;padding-left:20px;">创业吧</span></label></li>
+                        
+                            <li id="64" name="leshou" class="ui-state-default"><label id="64" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/leshou.gif) no-repeat 0% 50%;padding-left:20px;">乐收</span></label></li>
+                        
+                            <li id="89" name="youdao" class="ui-state-default"><label id="89" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/youdao.gif) no-repeat 0% 50%;padding-left:20px;">有道书签</span></label></li>
+                        
+                            <li id="74" name="wealink" class="ui-state-default"><label id="74" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/wealink.gif) no-repeat 0% 50%;padding-left:20px;">若邻网</span></label></li>
+                        
+                            <li id="79" name="dig24" class="ui-state-default"><label id="79" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/dig24.gif) no-repeat 0% 50%;padding-left:20px;">递客网</span></label></li>
+                        
+                            <li id="76" name="chouti" class="ui-state-default"><label id="76" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/chouti.gif) no-repeat 0% 50%;padding-left:20px;">抽屉网</span></label></li>
+                        
+                            <li id="32" name="115" class="ui-state-default"><label id="32" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/115.gif) no-repeat 0% 50%;padding-left:20px;">115收藏夹</span></label></li>
+                        
+                            <li id="52" name="tongxue" class="ui-state-default"><label id="52" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/tongxue.gif) no-repeat 0% 50%;padding-left:20px;">同学微博</span></label></li>
+                        
+                            <li id="69" name="diglog" class="ui-state-default"><label id="69" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/diglog.gif) no-repeat 0% 50%;padding-left:20px;">奇客发现</span></label></li>
+                        
+                            <li id="92" name="leihou" class="ui-state-default"><label id="92" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/leihou.gif) no-repeat 0% 50%;padding-left:20px;">雷猴</span></label></li>
+                        
+                            <li id="5" name="gmail" class="ui-state-default"><label id="5" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/gmail.gif) no-repeat 0% 50%;padding-left:20px;">Gmail</span></label></li>
+                        
+                            <li id="80" name="yijee" class="ui-state-default"><label id="80" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/yijee.gif) no-repeat 0% 50%;padding-left:20px;">易集网</span></label></li>
+                        
+                            <li id="36" name="hemidemi" class="ui-state-default"><label id="36" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/hemidemi.gif) no-repeat 0% 50%;padding-left:20px;">黑米书签</span></label></li>
+                        
+                            <li id="27" name="digg" class="ui-state-default"><label id="27" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/digg.gif) no-repeat 0% 50%;padding-left:20px;">掘客网</span></label></li>
+                        
+                            <li id="148" name="sinaqing" class="ui-state-default"><label id="148" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sinaqing.gif) no-repeat 0% 50%;padding-left:20px;">新浪Qing</span></label></li>
+                        
+                            <li id="91" name="tumblr" class="ui-state-default"><label id="91" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/tumblr.gif) no-repeat 0% 50%;padding-left:20px;">Tumblr</span></label></li>
+                        
+                            <li id="11" name="livespace" class="ui-state-default"><label id="11" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/livespace.gif) no-repeat 0% 50%;padding-left:20px;">MS Livespace</span></label></li>
+                        
+                            <li id="33" name="netvibes" class="ui-state-default"><label id="33" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/netvibes.gif) no-repeat 0% 50%;padding-left:20px;">Netvibes</span></label></li>
+                        
+                            <li id="37" name="myshare" class="ui-state-default"><label id="37" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/myshare.gif) no-repeat 0% 50%;padding-left:20px;">MyShare</span></label></li>
+                        
+                            <li id="55" name="evernote" class="ui-state-default"><label id="55" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/evernote.gif) no-repeat 0% 50%;padding-left:20px;">Evernote</span></label></li>
+                        
+                            <li id="48" name="fwisp" class="ui-state-default"><label id="48" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/fwisp.gif) no-repeat 0% 50%;padding-left:20px;">Fwisp</span></label></li>
+                        
+                            <li id="25" name="stumbleupon" class="ui-state-default"><label id="25" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/stumbleupon.gif) no-repeat 0% 50%;padding-left:20px;">StumbleUpon</span></label></li>
+                        
+                            <li id="94" name="instapaper" class="ui-state-default"><label id="94" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/instapaper.gif) no-repeat 0% 50%;padding-left:20px;">Instapaper</span></label></li>
+                        
+                            <li id="57" name="gtranslate" class="ui-state-default"><label id="57" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/gtranslate.gif) no-repeat 0% 50%;padding-left:20px;">Google翻译</span></label></li>
+                        
+                            <li id="59" name="friendfeed" class="ui-state-default"><label id="59" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/friendfeed.gif) no-repeat 0% 50%;padding-left:20px;">Friend Feed</span></label></li>
+                        
+                            <li id="54" name="printf" class="ui-state-default"><label id="54" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/printf.gif) no-repeat 0% 50%;padding-left:20px;">Print Friendly</span></label></li>
+                        
+                            <li id="111" name="dream" class="ui-state-default"><label id="111" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/dream.gif) no-repeat 0% 50%;padding-left:20px;">梦幻人生</span></label></li>
+                        
+                            <li id="93" name="readitlater" class="ui-state-default"><label id="93" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/readitlater.gif) no-repeat 0% 50%;padding-left:20px;">ReadItLater</span></label></li>
+                        
+                            <li id="26" name="mister_wong" class="ui-state-default"><label id="26" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mister_wong.gif) no-repeat 0% 50%;padding-left:20px;">Mister Wong</span></label></li>
+                        
+                            <li id="113" name="masar" class="ui-state-default"><label id="113" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/masar.gif) no-repeat 0% 50%;padding-left:20px;">玛撒网</span></label></li>
+                        
+                            <li id="107" name="ifensi" class="ui-state-default"><label id="107" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/ifensi.gif) no-repeat 0% 50%;padding-left:20px;">粉丝网</span></label></li>
+                        
+                            <li id="116" name="moptk" class="ui-state-default"><label id="116" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/moptk.gif) no-repeat 0% 50%;padding-left:20px;">猫扑推客</span></label></li>
+                        
+                            <li id="122" name="gmw" class="ui-state-default"><label id="122" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/gmw.gif) no-repeat 0% 50%;padding-left:20px;">光明网</span></label></li>
+                        
+                            <li id="125" name="mala" class="ui-state-default"><label id="125" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mala.gif) no-repeat 0% 50%;padding-left:20px;">麻辣微博</span></label></li>
+                        
+                            <li id="126" name="szone" class="ui-state-default"><label id="126" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/szone.gif) no-repeat 0% 50%;padding-left:20px;">守株网</span></label></li>
+                        
+                            <li id="128" name="xiaomeisns" class="ui-state-default"><label id="128" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xiaomeisns.gif) no-repeat 0% 50%;padding-left:20px;">校媒采通</span></label></li>
+                        
+                            <li id="129" name="cyolbbs" class="ui-state-default"><label id="129" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/cyolbbs.gif) no-repeat 0% 50%;padding-left:20px;">中青论坛</span></label></li>
+                        
+                            <li id="130" name="xyweibo" class="ui-state-default"><label id="130" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xyweibo.gif) no-repeat 0% 50%;padding-left:20px;">微博校园</span></label></li>
+                        
+                            <li id="131" name="zjol" class="ui-state-default"><label id="131" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/zjol.gif) no-repeat 0% 50%;padding-left:20px;">浙江微博</span></label></li>
+                        
+                            <li id="133" name="caimi" class="ui-state-default"><label id="133" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/caimi.gif) no-repeat 0% 50%;padding-left:20px;">财迷</span></label></li>
+                        
+                            <li id="135" name="joinwish" class="ui-state-default"><label id="135" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/joinwish.gif) no-repeat 0% 50%;padding-left:20px;">好愿网</span></label></li>
+                        
+                            <li id="142" name="laodao" class="ui-state-default"><label id="142" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/laodao.gif) no-repeat 0% 50%;padding-left:20px;">唠叨网</span></label></li>
+                        
+                            <li id="143" name="yaolanmb" class="ui-state-default"><label id="143" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/yaolanmb.gif) no-repeat 0% 50%;padding-left:20px;">摇篮微博</span></label></li>
+                        
+                            <li id="145" name="printer" class="ui-state-default"><label id="145" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/printer.gif) no-repeat 0% 50%;padding-left:20px;">打印</span></label></li>
+                        
+                            <li id="149" name="xinminmb" class="ui-state-default"><label id="149" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xinminmb.gif) no-repeat 0% 50%;padding-left:20px;">新民微博</span></label></li>
+                        
+                            <li id="150" name="eastdaymb" class="ui-state-default"><label id="150" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/eastdaymb.gif) no-repeat 0% 50%;padding-left:20px;">东方微博</span></label></li>
+                        
+                            <li id="151" name="redmb" class="ui-state-default"><label id="151" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/redmb.gif) no-repeat 0% 50%;padding-left:20px;">红微博</span></label></li>
+                        
+                            <li id="153" name="szmb" class="ui-state-default"><label id="153" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/szmb.gif) no-repeat 0% 50%;padding-left:20px;">深圳微博</span></label></li>
+                        
+                            <li id="154" name="changshamb" class="ui-state-default"><label id="154" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/changshamb.gif) no-repeat 0% 50%;padding-left:20px;">微长沙</span></label></li>
+                        
+                            <li id="155" name="hefeimb" class="ui-state-default"><label id="155" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/hefeimb.gif) no-repeat 0% 50%;padding-left:20px;">合肥微博</span></label></li>
+                        
+                            <li id="156" name="wansha" class="ui-state-default"><label id="156" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/wansha.gif) no-repeat 0% 50%;padding-left:20px;">玩啥e族</span></label></li>
+                        
+                            <li id="158" name="diandian" class="ui-state-default"><label id="158" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/diandian.gif) no-repeat 0% 50%;padding-left:20px;">点点网</span></label></li>
+                        
+                            <li id="159" name="tianji" class="ui-state-default"><label id="159" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/tianji.gif) no-repeat 0% 50%;padding-left:20px;">天际网</span></label></li>
+                        
+                            <li id="160" name="jipin" class="ui-state-default"><label id="160" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/jipin.gif) no-repeat 0% 50%;padding-left:20px;">开心集品</span></label></li>
+                        
+                            <li id="162" name="chezhumb" class="ui-state-default"><label id="162" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/chezhumb.gif) no-repeat 0% 50%;padding-left:20px;">车主微博</span></label></li>
+                        
+                            <li id="163" name="gplus" class="ui-state-default"><label id="163" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/gplus.gif) no-repeat 0% 50%;padding-left:20px;">Google+</span></label></li>
+                        
+                            <li id="164" name="yidongweibo" class="ui-state-default"><label id="164" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/yidongweibo.gif) no-repeat 0% 50%;padding-left:20px;">移动微博</span></label></li>
+                        
+                            <li id="165" name="jschina" class="ui-state-default"><label id="165" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/jschina.gif) no-repeat 0% 50%;padding-left:20px;">微江苏</span></label></li>
+                        
+                            <li id="166" name="mingdao" class="ui-state-default"><label id="166" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mingdao.gif) no-repeat 0% 50%;padding-left:20px;">明道</span></label></li>
+                        
+                            <li id="167" name="mqzone" class="ui-state-default"><label id="167" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mqzone.gif) no-repeat 0% 50%;padding-left:20px;">手机Qzone</span></label></li>
+                        
+                            <li id="168" name="jxcn" class="ui-state-default"><label id="168" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/jxcn.gif) no-repeat 0% 50%;padding-left:20px;">江西微博</span></label></li>
+                        
+                            <li id="169" name="mweibo" class="ui-state-default"><label id="169" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mweibo.gif) no-repeat 0% 50%;padding-left:20px;">微分享</span></label></li>
+                        
+                            <li id="170" name="mfeixin" class="ui-state-default"><label id="170" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/mfeixin.gif) no-repeat 0% 50%;padding-left:20px;">手机飞信</span></label></li>
+                        
+                            <li id="171" name="qileke" class="ui-state-default"><label id="171" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qileke.gif) no-repeat 0% 50%;padding-left:20px;">奇乐收藏</span></label></li>
+                        
+                            <li id="172" name="sohukan" class="ui-state-default"><label id="172" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/sohukan.gif) no-repeat 0% 50%;padding-left:20px;">搜狐随身看</span></label></li>
+                        
+                            <li id="173" name="maikunote" class="ui-state-default"><label id="173" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/maikunote.gif) no-repeat 0% 50%;padding-left:20px;">麦库记事</span></label></li>
+                        
+                            <li id="174" name="lezhimark" class="ui-state-default"><label id="174" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/lezhimark.gif) no-repeat 0% 50%;padding-left:20px;">乐知书签</span></label></li>
+                        
+                            <li id="175" name="189mail" class="ui-state-default"><label id="175" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/189mail.gif) no-repeat 0% 50%;padding-left:20px;">189邮箱</span></label></li>
+                        
+                            <li id="176" name="gmweibo" class="ui-state-default"><label id="176" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/gmweibo.gif) no-repeat 0% 50%;padding-left:20px;">光明微博</span></label></li>
+                        
+                            <li id="177" name="wo" class="ui-state-default"><label id="177" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/wo.gif) no-repeat 0% 50%;padding-left:20px;">WO+分享</span></label></li>
+                        
+                            <li id="178" name="qingbiji" class="ui-state-default"><label id="178" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/qingbiji.gif) no-repeat 0% 50%;padding-left:20px;">轻笔记</span></label></li>
+                        
+                            <li id="179" name="jianweibo" class="ui-state-default"><label id="179" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/jianweibo.gif) no-repeat 0% 50%;padding-left:20px;">吉安微博</span></label></li>
+                        
+                            <li id="180" name="duankou" class="ui-state-default"><label id="180" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/duankou.gif) no-repeat 0% 50%;padding-left:20px;">端口网</span></label></li>
+                        
+                            <li id="182" name="kdweibo" class="ui-state-default"><label id="182" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/kdweibo.gif) no-repeat 0% 50%;padding-left:20px;">云之家</span></label></li>
+                        
+                            <li id="183" name="xueqiu" class="ui-state-default"><label id="183" class="checkboxLabel"><span style="background:url(http://static.bshare.cn/frame/images/logos/s4/xueqiu.gif) no-repeat 0% 50%;padding-left:20px;">雪球</span></label></li>
+                        -->                     </UL>
+<UL>
+  <LI style="list-style: none; text-align: center;"><IMG style="margin: 3px 30px 0px 0px; cursor: pointer;" 
+  onclick="fillSortable();return false;" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/arrow-up-large-grey.gif"><IMG 
+  style="margin: 3px 0px 0px; cursor: pointer;" onclick="resetSortable(true);return false;" 
+  src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/arrow-down-large-grey.gif"></LI></UL>
+<UL class="sortableSp left maxHeight110" id="pSortableList" style="padding: 3px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 930px; overflow: auto; min-height: 22px;">
+  <LI class="ui-state-default" id="86" name="qqmb"><LABEL class="checkboxLabel" 
+  id="86"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qqmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>腾讯微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="998" name="bsharesync"><LABEL class="checkboxLabel" 
+  id="998"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/bsharesync.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>一键通</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="24" name="sinaminiblog"><LABEL class="checkboxLabel" 
+  id="24"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sinaminiblog.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>新浪微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="75" name="qzone"><LABEL class="checkboxLabel" 
+  id="75"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qzone.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>QQ空间</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="157" name="189share"><LABEL class="checkboxLabel" 
+  id="157"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/189share.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>手机快传</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="77" name="sohuminiblog"><LABEL class="checkboxLabel" 
+  id="77"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sohuminiblog.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>搜狐微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="2" name="renren"><LABEL class="checkboxLabel" 
+  id="2"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/renren.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>人人网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="152" name="xinhuamb"><LABEL class="checkboxLabel" 
+  id="152"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xinhuamb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>新华微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="99" name="tianya"><LABEL class="checkboxLabel" 
+  id="99"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/tianya.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>天涯</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="114" name="shouji"><LABEL class="checkboxLabel" 
+  id="114"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/shouji.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>手机</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="108" name="ifengmb"><LABEL class="checkboxLabel" 
+  id="108"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/ifengmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>凤凰微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="84" name="neteasemb"><LABEL class="checkboxLabel" 
+  id="84"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/neteasemb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>网易微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="97" name="qqxiaoyou"><LABEL class="checkboxLabel" 
+  id="97"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qqxiaoyou.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>朋友网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="1" name="kaixin001"><LABEL class="checkboxLabel" 
+  id="1"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/kaixin001.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>开心网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="184" name="weixin"><LABEL class="checkboxLabel" 
+  id="184"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/weixin.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>微信</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="3" name="douban"><LABEL class="checkboxLabel" 
+  id="3"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/douban.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>豆瓣</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="181" name="qqim"><LABEL class="checkboxLabel" 
+  id="181"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qqim.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>QQ好友</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="121" name="peoplemb"><LABEL class="checkboxLabel" 
+  id="121"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/peoplemb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>人民微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="73" name="baiduhi"><LABEL class="checkboxLabel" 
+  id="73"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/baiduhi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>百度空间</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="161" name="youdaonote"><LABEL class="checkboxLabel" 
+  id="161"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/youdaonote.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>有道笔记</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="137" name="southmb"><LABEL class="checkboxLabel" 
+  id="137"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/southmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>南方微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="118" name="woshao"><LABEL class="checkboxLabel" 
+  id="118"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/woshao.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>我烧网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="8" name="qqshuqian"><LABEL class="checkboxLabel" 
+  id="8"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qqshuqian.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>QQ书签</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="41" name="email"><LABEL class="checkboxLabel" 
+  id="41"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/email.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>电子邮件</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="72" name="taojianghu"><LABEL class="checkboxLabel" 
+  id="72"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/taojianghu.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>淘江湖</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="95" name="feixin"><LABEL class="checkboxLabel" 
+  id="95"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/feixin.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>飞信</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="51" name="itieba"><LABEL class="checkboxLabel" 
+  id="51"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/itieba.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>i贴吧</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="127" name="tuita"><LABEL class="checkboxLabel" 
+  id="127"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/tuita.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>推他</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="21" name="facebook"><LABEL class="checkboxLabel" 
+  id="21"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/facebook.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Facebook</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="23" name="twitter"><LABEL class="checkboxLabel" 
+  id="23"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/twitter.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Twitter</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="115" name="139mail"><LABEL class="checkboxLabel" 
+  id="115"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/139mail.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>139邮箱</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="146" name="pinterest"><LABEL class="checkboxLabel" 
+  id="146"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/pinterest.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Pinterest</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="139" name="huaban"><LABEL class="checkboxLabel" 
+  id="139"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/huaban.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>花瓣</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="144" name="duitang"><LABEL class="checkboxLabel" 
+  id="144"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/duitang.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>堆糖</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="138" name="meilishuo"><LABEL class="checkboxLabel" 
+  id="138"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/meilishuo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>美丽说</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="140" name="mogujie"><LABEL class="checkboxLabel" 
+  id="140"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mogujie.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>蘑菇街</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="141" name="ifengkb"><LABEL class="checkboxLabel" 
+  id="141"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/ifengkb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>凤凰快博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="9" name="sohubai"><LABEL class="checkboxLabel" 
+  id="9"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sohubai.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>搜狐白社会</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="117" name="waakee"><LABEL class="checkboxLabel" 
+  id="117"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/waakee.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>挖客</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="4" name="baiducang"><LABEL class="checkboxLabel" 
+  id="4"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/baiducang.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>百度搜藏</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="106" name="hexunmb"><LABEL class="checkboxLabel" 
+  id="106"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/hexunmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>和讯微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="15" name="bgoogle"><LABEL class="checkboxLabel" 
+  id="15"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/bgoogle.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Google书签</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="83" name="clipboard"><LABEL class="checkboxLabel" 
+  id="83"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/clipboard.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>复制网址</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="147" name="miliao"><LABEL class="checkboxLabel" 
+  id="147"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/miliao.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>米聊</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="100" name="fanfou"><LABEL class="checkboxLabel" 
+  id="100"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/fanfou.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>饭否</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="71" name="msn"><LABEL class="checkboxLabel" 
+  id="71"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/msn.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>MSN</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="28" name="reddit"><LABEL class="checkboxLabel" 
+  id="28"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/reddit.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Reddit</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="14" name="delicious"><LABEL class="checkboxLabel" 
+  id="14"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/delicious.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Delicious</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="102" name="renmaiku"><LABEL class="checkboxLabel" 
+  id="102"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/renmaiku.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>人脉库</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="22" name="myspace"><LABEL class="checkboxLabel" 
+  id="22"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/myspace.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>MySpace</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="6" name="favorite"><LABEL class="checkboxLabel" 
+  id="6"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/favorite.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>收藏夹</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="13" name="xianguo"><LABEL class="checkboxLabel" 
+  id="13"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xianguo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>鲜果网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="110" name="ganniu"><LABEL class="checkboxLabel" 
+  id="110"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/ganniu.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>赶牛微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="29" name="linkedin"><LABEL class="checkboxLabel" 
+  id="29"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/linkedin.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>LinkedIn</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="7" name="sinavivi"><LABEL class="checkboxLabel" 
+  id="7"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sinavivi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>新浪Vivi</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="47" name="renjian"><LABEL class="checkboxLabel" 
+  id="47"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/renjian.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>人间网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="10" name="9dian"><LABEL class="checkboxLabel" 
+  id="10"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/9dian.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>豆瓣9点</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="82" name="cfol"><LABEL class="checkboxLabel" 
+  id="82"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/cfol.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>中金微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="60" name="diigo"><LABEL class="checkboxLabel" 
+  id="60"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/diigo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Diigo</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="85" name="ushi"><LABEL class="checkboxLabel" 
+  id="85"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/ushi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>优士网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="19" name="poco"><LABEL class="checkboxLabel" 
+  id="19"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/poco.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Poco网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="98" name="cyzone"><LABEL class="checkboxLabel" 
+  id="98"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/cyzone.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>创业吧</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="64" name="leshou"><LABEL class="checkboxLabel" 
+  id="64"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/leshou.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>乐收</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="89" name="youdao"><LABEL class="checkboxLabel" 
+  id="89"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/youdao.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>有道书签</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="74" name="wealink"><LABEL class="checkboxLabel" 
+  id="74"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/wealink.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>若邻网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="79" name="dig24"><LABEL class="checkboxLabel" 
+  id="79"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/dig24.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>递客网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="76" name="chouti"><LABEL class="checkboxLabel" 
+  id="76"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/chouti.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>抽屉网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="32" name="115"><LABEL class="checkboxLabel" 
+  id="32"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/115.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>115收藏夹</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="52" name="tongxue"><LABEL class="checkboxLabel" 
+  id="52"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/tongxue.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>同学微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="69" name="diglog"><LABEL class="checkboxLabel" 
+  id="69"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/diglog.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>奇客发现</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="92" name="leihou"><LABEL class="checkboxLabel" 
+  id="92"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/leihou.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>雷猴</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="5" name="gmail"><LABEL class="checkboxLabel" 
+  id="5"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/gmail.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Gmail</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="80" name="yijee"><LABEL class="checkboxLabel" 
+  id="80"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/yijee.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>易集网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="36" name="hemidemi"><LABEL class="checkboxLabel" 
+  id="36"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/hemidemi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>黑米书签</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="27" name="digg"><LABEL class="checkboxLabel" 
+  id="27"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/digg.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>掘客网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="148" name="sinaqing"><LABEL class="checkboxLabel" 
+  id="148"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sinaqing.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>新浪Qing</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="91" name="tumblr"><LABEL class="checkboxLabel" 
+  id="91"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/tumblr.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Tumblr</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="11" name="livespace"><LABEL class="checkboxLabel" 
+  id="11"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/livespace.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>MS 
+  Livespace</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="33" name="netvibes"><LABEL class="checkboxLabel" 
+  id="33"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/netvibes.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Netvibes</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="37" name="myshare"><LABEL class="checkboxLabel" 
+  id="37"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/myshare.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>MyShare</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="55" name="evernote"><LABEL class="checkboxLabel" 
+  id="55"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/evernote.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Evernote</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="48" name="fwisp"><LABEL class="checkboxLabel" 
+  id="48"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/fwisp.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Fwisp</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="25" name="stumbleupon"><LABEL class="checkboxLabel" 
+  id="25"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/stumbleupon.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>StumbleUpon</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="94" name="instapaper"><LABEL class="checkboxLabel" 
+  id="94"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/instapaper.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Instapaper</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="57" name="gtranslate"><LABEL class="checkboxLabel" 
+  id="57"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/gtranslate.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Google翻译</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="59" name="friendfeed"><LABEL class="checkboxLabel" 
+  id="59"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/friendfeed.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Friend 
+  Feed</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="54" name="printf"><LABEL class="checkboxLabel" 
+  id="54"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/printf.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Print 
+  Friendly</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="111" name="dream"><LABEL class="checkboxLabel" 
+  id="111"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/dream.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>梦幻人生</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="93" name="readitlater"><LABEL class="checkboxLabel" 
+  id="93"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/readitlater.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>ReadItLater</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="26" name="mister_wong"><LABEL class="checkboxLabel" 
+  id="26"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mister_wong.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Mister 
+  Wong</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="113" name="masar"><LABEL class="checkboxLabel" 
+  id="113"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/masar.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>玛撒网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="107" name="ifensi"><LABEL class="checkboxLabel" 
+  id="107"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/ifensi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>粉丝网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="116" name="moptk"><LABEL class="checkboxLabel" 
+  id="116"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/moptk.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>猫扑推客</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="122" name="gmw"><LABEL class="checkboxLabel" 
+  id="122"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/gmw.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>光明网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="125" name="mala"><LABEL class="checkboxLabel" 
+  id="125"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mala.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>麻辣微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="126" name="szone"><LABEL class="checkboxLabel" 
+  id="126"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/szone.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>守株网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="128" name="xiaomeisns"><LABEL class="checkboxLabel" 
+  id="128"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xiaomeisns.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>校媒采通</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="129" name="cyolbbs"><LABEL class="checkboxLabel" 
+  id="129"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/cyolbbs.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>中青论坛</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="130" name="xyweibo"><LABEL class="checkboxLabel" 
+  id="130"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xyweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>微博校园</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="131" name="zjol"><LABEL class="checkboxLabel" 
+  id="131"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/zjol.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>浙江微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="133" name="caimi"><LABEL class="checkboxLabel" 
+  id="133"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/caimi.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>财迷</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="135" name="joinwish"><LABEL class="checkboxLabel" 
+  id="135"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/joinwish.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>好愿网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="142" name="laodao"><LABEL class="checkboxLabel" 
+  id="142"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/laodao.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>唠叨网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="143" name="yaolanmb"><LABEL class="checkboxLabel" 
+  id="143"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/yaolanmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>摇篮微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="145" name="printer"><LABEL class="checkboxLabel" 
+  id="145"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/printer.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>打印</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="149" name="xinminmb"><LABEL class="checkboxLabel" 
+  id="149"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xinminmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>新民微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="150" name="eastdaymb"><LABEL class="checkboxLabel" 
+  id="150"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/eastdaymb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>东方微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="151" name="redmb"><LABEL class="checkboxLabel" 
+  id="151"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/redmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>红微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="153" name="szmb"><LABEL class="checkboxLabel" 
+  id="153"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/szmb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>深圳微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="154" name="changshamb"><LABEL class="checkboxLabel" 
+  id="154"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/changshamb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>微长沙</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="155" name="hefeimb"><LABEL class="checkboxLabel" 
+  id="155"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/hefeimb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>合肥微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="156" name="wansha"><LABEL class="checkboxLabel" 
+  id="156"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/wansha.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>玩啥e族</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="158" name="diandian"><LABEL class="checkboxLabel" 
+  id="158"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/diandian.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>点点网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="159" name="tianji"><LABEL class="checkboxLabel" 
+  id="159"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/tianji.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>天际网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="160" name="jipin"><LABEL class="checkboxLabel" 
+  id="160"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/jipin.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>开心集品</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="162" name="chezhumb"><LABEL class="checkboxLabel" 
+  id="162"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/chezhumb.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>车主微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="163" name="gplus"><LABEL class="checkboxLabel" 
+  id="163"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/gplus.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>Google+</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="164" name="yidongweibo"><LABEL class="checkboxLabel" 
+  id="164"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/yidongweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>移动微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="165" name="jschina"><LABEL class="checkboxLabel" 
+  id="165"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/jschina.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>微江苏</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="166" name="mingdao"><LABEL class="checkboxLabel" 
+  id="166"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mingdao.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>明道</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="167" name="mqzone"><LABEL class="checkboxLabel" 
+  id="167"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mqzone.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>手机Qzone</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="168" name="jxcn"><LABEL class="checkboxLabel" 
+  id="168"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/jxcn.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>江西微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="169" name="mweibo"><LABEL class="checkboxLabel" 
+  id="169"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>微分享</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="170" name="mfeixin"><LABEL class="checkboxLabel" 
+  id="170"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/mfeixin.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>手机飞信</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="171" name="qileke"><LABEL class="checkboxLabel" 
+  id="171"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qileke.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>奇乐收藏</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="172" name="sohukan"><LABEL class="checkboxLabel" 
+  id="172"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/sohukan.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>搜狐随身看</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="173" name="maikunote"><LABEL class="checkboxLabel" 
+  id="173"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/maikunote.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>麦库记事</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="174" name="lezhimark"><LABEL class="checkboxLabel" 
+  id="174"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/lezhimark.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>乐知书签</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="175" name="189mail"><LABEL class="checkboxLabel" 
+  id="175"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/189mail.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>189邮箱</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="176" name="gmweibo"><LABEL class="checkboxLabel" 
+  id="176"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/gmweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>光明微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="177" name="wo"><LABEL class="checkboxLabel" 
+  id="177"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/wo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>WO+分享</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="178" name="qingbiji"><LABEL class="checkboxLabel" 
+  id="178"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/qingbiji.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>轻笔记</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="179" name="jianweibo"><LABEL class="checkboxLabel" 
+  id="179"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/jianweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>吉安微博</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="180" name="duankou"><LABEL class="checkboxLabel" 
+  id="180"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/duankou.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>端口网</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="182" name="kdweibo"><LABEL class="checkboxLabel" 
+  id="182"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/kdweibo.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>云之家</SPAN></LABEL></LI>
+  <LI class="ui-state-default" id="183" name="xueqiu"><LABEL class="checkboxLabel" 
+  id="183"><SPAN style='background: url("http://static.bshare.cn/frame/images/logos/s4/xueqiu.gif") no-repeat 0% 50%; padding-left: 20px; white-space: nowrap;'>雪球</SPAN></LABEL></LI></UL>
+<DIV class="clear"></DIV></DIV>
+<SCRIPT>
+		        // UI hack for IE 7
+		        if ($.browser.msie && parseInt($.browser.version, 10) === 7) {
+		            $("#pSortableSelected").removeClass("maxHeight110");
+		            $("#pSortableList").removeClass("maxHeight110");
+		        }
+		        </SCRIPT>
+             </DIV>
+<DIV class="clear spacer10"></DIV></DIV>
+<DIV class="clear spacer5"></DIV>
+<DIV class="left" style="width: 78px;">&nbsp;</DIV>
+<DIV class="left"><SPAN><STRONG>风格:&nbsp;</STRONG><INPUT name="colSelect" id="colSelect1" 
+type="radio" value="1"><LABEL for="colSelect1">迷你</LABEL> <INPUT name="colSelect" 
+id="colSelect2" type="radio" value="2"><LABEL for="colSelect2">标准</LABEL> <INPUT 
+name="colSelect" id="colSelect3" type="radio" value="3"><LABEL 
+for="colSelect3">宽阔</LABEL> </SPAN>                             <SPAN style="margin-left: 15px;"><STRONG>分享次数:&nbsp;</STRONG><INPUT 
+name="sscSelect" id="sscSelecttrue" type="radio" value="true"><LABEL for="sscSelecttrue">是</LABEL> 
+<INPUT name="sscSelect" id="sscSelectfalse" type="radio" value="false"><LABEL 
+for="sscSelectfalse">否</LABEL> </SPAN>                     </DIV>
+<DIV class="clear spacer20"></DIV><A class="bLinkU" href="http://www.bshare.cn/moreStyles" 
+target="_blank">&gt;&gt;选择其他按钮样式</A>         
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear spacer20"></DIV>
+<DIV class="div-gradient-light-top" style="height: 20px;"></DIV>
+<DIV style="padding: 0px 20px;">
+<H1 class="heading3 text-orange">3. 复制代码</H1>
+<DIV class="spacer20"></DIV>
+<DIV class="left" style="width: 75px; color: rgb(102, 102, 102); font-size: 14px;">使用说明：</DIV>
+<DIV class="right" style="width: 860px;">
+<P 
+style="color: rgb(102, 102, 102); font-size: 14px;">复制并粘贴下面的JS代码,放到您的网页，可以在&lt;body&gt;和&lt;/body&gt;的之间网页的任意位置放置。如果您的网站使用的模板，您也可以复制代码到您的模板，按钮将在所有网页自动出现。</P></DIV>
+<DIV class="clear spacer20"></DIV>
+<UL class="tabs" style="width: auto;">
+  <LI><A title="bShare" class="current" id="tab-bshare">bShare</A></LI>
+  <LI><A title="bShare Plus" id="tab-bsharePlus">bShare Plus</A></LI></UL>
+<DIV class="clear spacer10"></DIV>
+<DIV class="left" style="width: 505px;"><TEXTAREA name="bShare_Code" class="code-textarea bTextarea" id="bShare_Code" style="background: rgb(241, 241, 241); border: 1px solid rgb(153, 153, 153); border-image: none; width: 100%; height: 220px; color: rgb(0, 0, 0); white-space: normal;" readonly="">&lt;div class="bshare-custom"&gt;&lt;a title="分享到QQ空间" class="bshare-qzone"&gt;&lt;/a&gt;&lt;a title="分享到新浪微博" class="bshare-sinaminiblog"&gt;&lt;/a&gt;&lt;a title="分享到人人网" class="bshare-renren"&gt;&lt;/a&gt;&lt;a title="分享到腾讯微博" class="bshare-qqmb"&gt;&lt;/a&gt;&lt;a title="分享到网易微博" class="bshare-neteasemb"&gt;&lt;/a&gt;&lt;a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"&gt;&lt;/a&gt;&lt;span class="BSHARE_COUNT bshare-share-count"&gt;0&lt;/span&gt;&lt;/div&gt;&lt;script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;amp;uuid=&amp;amp;pophcol=2&amp;amp;lang=zh"&gt;&lt;/script&gt;&lt;script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"&gt;&lt;/script&gt;</TEXTAREA>         </DIV>
+<DIV class="right floatFix">
+<DIV class="preview"></DIV></DIV>
+<DIV class="clear spacer5"></DIV>
+<DIV class="left" id="d_clip_container" style="position: relative;"><BUTTON 
+class="bButton-lightblue" id="copyCodeButton" style="padding: 15px 30px; font-weight: bold;" 
+type="button">复制代码</BUTTON>         </DIV><!-- <div id="new_feature_container" class="left" style="height: 50px; line-height: 80px; margin-left: 20px;">
+            <a href="/help/channelWeibo" class="bLinkU" target="_blank">试试&nbsp;bShare&nbsp;新浪微博渠道应用申请服务吧，轻松获取微博应用，个性分享来源由您定！</a>
+        </div> --> 
+    </DIV>
+<DIV class="clear spacer40"></DIV>
+<DIV class="div-gradient-light-top" style="height: 40px;"></DIV>
+<DIV style="padding: 0px 20px;">
+<DIV style="color: rgb(51, 51, 51); font-weight: bold;">觉得按钮加载慢？</DIV>
+<DIV class="clear spacer10"></DIV>
+<P 
+style="color: rgb(102, 102, 102);">为了保障贵网站的加载速度，bShare使用了延迟加载的技术，保证您的用户可以最快的看到页面内容。当然，您也可以禁止延迟加载。请看<A 
+class="bLinkU" href="http://www.bshare.cn/help/apiJsPage" 
+target="_blank">这里</A>了解更多。</P>
+<DIV class="clear spacer20"></DIV>
+<DIV style="color: rgb(51, 51, 51); font-weight: bold;">对按钮样式还不满意？</DIV>
+<DIV class="clear spacer10"></DIV>
+<P style="color: rgb(102, 102, 102);">想调试平台顺序？快<A class="bLinkU" href="http://www.bshare.cn/moreStyles" 
+target="_blank">查看还有什么样式</A>或<A class="bLinkU" href="http://www.bshare.cn/introCustomize" 
+target="_blank">自定义</A>选项吧。</P>
+<DIV class="clear spacer20"></DIV>
+<DIV style="color: rgb(51, 51, 51); font-weight: bold;">需要数据统计吗？</DIV>
+<DIV class="clear spacer10"></DIV>
+<P 
+style="color: rgb(102, 102, 102);">如果您还希望知道哪些文章最经常被分享、被分享到哪里、带回多少流量等数据，您可以利用<A 
+class="bLinkU" href="http://www.bshare.cn/analytics" 
+target="_blank">bShare数据系统</A>进行追踪。<BR>您只需要<A class="bLinkU" style="color: red;" 
+href="http://www.bshare.cn/register">注册</A>就可以免费使用哦！</P>
+<DIV class="clear spacer20"></DIV>
+<DIV style="color: rgb(51, 51, 51); font-weight: bold;">想要了解更多吗？</DIV>
+<DIV class="clear spacer10"></DIV>
+<P style="color: rgb(102, 102, 102);">如果您希望了解更多<A class="bLinkU" href="http://www.bshare.cn/help/reasons">bShare的功能</A>，例如<A 
+class="bLinkU" href="http://www.bshare.cn/analytics" target="_blank">数据追踪</A>、<A 
+class="bLinkU" href="http://www.bshare.cn/introCustomize" 
+target="_blank">自定义</A>等功能，您可以使用左边的菜单进行浏览。如果您有任何的疑问，您可以查看<A class="bLinkU" href="http://www.bshare.cn/help">FAQ常见问题</A>或者到<A 
+class="bLinkU" href="http://www.bshare.cn/feedback" 
+target="_blank">问题反馈</A>页面给我们提供反馈，我们一定竭诚为您服务。</P>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV>
+<FORM name="installAction" class="hidden" id="installAction" action="/help/installAction" 
+method="POST"><INPUT name="buttonStyle" id="installAction_buttonStyle" type="hidden" value="C1:true:addthis"> 
+    <INPUT name="uuid" id="uuid" type="hidden">     <INPUT name="isLite" id="isLite" type="hidden" value="true"> 
+    <INPUT name="hoverCol" id="hoverCol" type="hidden" value="2">     
+<INPUT name="isName" id="isName" type="hidden" value="false">     <INPUT name="userSelPlats" id="userSelPlats" type="hidden"> 
+    <INPUT name="isShowCount" id="isShowCount" type="hidden" value="true"> 
+</FORM>
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery.tools.forms.min.1.2.6.js" type="text/javascript" charset="utf-8"></SCRIPT>
+ 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery.zclip.min.js" type="text/javascript" charset="utf-8"></SCRIPT>
+ 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/webtoolkit.sha1.js" type="text/javascript" charset="utf-8"></SCRIPT>
+ 
+<SCRIPT src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/jquery-ui-1.8.16.sortable.min.js" type="text/javascript" charset="utf-8"></SCRIPT>
+ 
+<SCRIPT type="text/javascript" charset="utf-8">
+    function clearPreviewPlatforms() {
+        $("#previewDiv .bshare-custom a").each(function() {
+            if (!$(this).hasClass("bshare-more")) $(this).remove();
+        });
+    }
+    function addToSortable($sortableObj, id, name, label) {
+        $sortableObj.append("<li id='" + id + "' name='" + name + "' class='ui-state-default'><label id='" + id + "' class='checkboxLabel'>" + label + "</label></li>");
+        return false;
+    }
+    function removeFromSortable($sortableObj, id) {
+        $sortableObj.find("li[id=" + id + "]").remove();
+        return false;
+    }
+    function moveToSortable($sortableObjFrom, $sortableObjTo, id, name, label) {
+        removeFromSortable($sortableObjFrom, id);
+        addToSortable($sortableObjTo, id, name, label);
+    }
+    function resetSortable(isRemovePreview) {
+        $("#pSortableSelected li").each(function() {
+            moveToSortable($("#pSortableSelected"), $("#pSortableList"), $(this).attr("id"), $(this).attr("name"), $(this).children("label").html());
+            if (isRemovePreview) {
+                removeFromPreview($(this));
+                updateCode();
+            }
+        });
+        if ($.browser.msie) {
+            $("#pSortableSelected").css("height", "22px");
+            $("#pSortableList").css("height", "auto");
+        }
+    }
+    function fillSortable() {
+        $("#pSortableList li").each(function() {
+            moveToSortable($("#pSortableList"), $("#pSortableSelected"), $(this).attr("id"), $(this).attr("name"), $(this).children("label").html());
+            addToPreview($(this), null);
+        });
+        updateCode();
+        if ($.browser.msie) {
+            $("#pSortableList").css("height", "22px");
+            $("#pSortableSelected").css("height", "auto");
+        }
+    }
+    function addToPreview($insObj, insertAfterName) {
+        var $bc = $("#previewDiv").children(".bshare-custom");
+        var toIns = '<a title="分享到' + $insObj.children("label").children("span").text() 
+          + '" class="bshare-' + $insObj.attr("name") + '" href="javascript:void(0);">'
+          + ("false"=="true"?$insObj.children("label").children("span").text():"") + '</a>';
+        removeFromPreview($insObj);
+        if (insertAfterName) {
+            $bc.children(".bshare-" + insertAfterName).after(toIns);
+        } else if ($insObj.next().attr("name")){
+            $bc.children(".bshare-" + $insObj.next().attr("name")).before(toIns);
+        } else if ($insObj.prev().attr("name")){
+            $bc.children(".bshare-" + $insObj.prev().attr("name")).after(toIns);
+        //} else if ($bc.children("#bshare-shareto").length != 0) {
+        //  $bc.children("#bshare-shareto").after(toIns);
+        } else {
+            $bc.children(".bshare-more-icon").before(toIns);
+        }
+        // bind the platform to share for preview
+        $(".bshare-" + $insObj.attr("name")).click(function(e) {
+            bShare.share(e,$insObj.attr("name"),0); return false;
+        });
+    }
+    function removeFromPreview($insObj) {
+        $("#previewDiv").children(".bshare-custom").find(".bshare-" + $insObj.attr("name")).remove();
+    }
+    function updateCode() {
+        $("#bShare_Code").val($.trim($("#previewDiv").html()));
+    }
+    function changeDisplaySC(isShow) {
+        if (isShow == "true") {
+            $("#previewDiv").children(".bshare-custom").append("<span class=\"BSHARE_COUNT bshare-share-count\">0</span>");
+        }
+        else {
+            $("#previewDiv").children(".bshare-custom").find(".bshare-share-count").remove();
+        }
+        updateCode();
+    }
+    function setUserSelPlats() {
+        // get the current user selected platforms:
+        var srvArr = $("#pSortableSelected").sortable('toArray'), srv = "";
+        for (var i = 0; i < srvArr.length; i++) {
+            var psId = srvArr[i];
+            if(psId != "null" && psId != "") {
+                srv = srv + "," + psId;
+            }
+        }
+        if(srv.length > 0) {
+            $("#userSelPlats").val(srv.substring(1));
+        } else {
+            $("#userSelPlats").val("");
+        }
+    }
+
+    $(function() {
+        $("#installStepOne").show();
+        
+        
+            $("#tab-bsharePlus").click(function(e) {
+                $("#isLite").val("false");
+                $("#hoverCol").val($("input[name=colSelect]:checked").val());
+                setUserSelPlats();
+                $("#installAction").submit();
+            });
+            //$(".leftMenu-getButtonLite").addClass("active");
+        
+        
+        
+        $("input[name=colSelect]").change(function(e) {
+            $("#hoverCol").val($(this).val());
+            setUserSelPlats();
+            $("#installAction").submit();
+        });
+        $("input[name=sscSelect]").change(function(e) {
+            changeDisplaySC($(this).val());
+            $("#isShowCount").val($(this).val());
+        });
+        if ("true" == "false") {
+            $("input[name=sscSelect]").filter("[value=false]").prop("checked",true);
+            changeDisplaySC(false);
+        }
+        
+        $("#setPlatformsLink").click(function() {
+            if ($(this).hasClass("spHide")) {
+                $(this).removeClass("spHide");
+                $(this).addClass("spShow");
+                $("#setPlatformsDiv").show();
+            } else {
+                $(this).removeClass("spShow");
+                $(this).addClass("spHide");
+                $("#setPlatformsDiv").hide();
+            }
+        });
+        
+        // init the sortable lists:
+        $("#pSortableList, #pSortableSelected").sortable({ 
+            placeholder: 'ui-state-highlight', 
+            containment: '#pSortable',
+            connectWith: '.sortableSp',
+            update: function(event, ui) {
+                if (ui.sender && ui.sender.attr("id") == "pSortableSelected") {
+                    removeFromPreview(ui.item);
+                } else {
+                    if (ui.item.parent().attr("id") == "pSortableList") return;
+                    addToPreview(ui.item, ui.item.prev().attr("name"));
+                }
+                // update the code
+                updateCode();
+            }
+        }).disableSelection();
+        
+        
+            // init the preview div and sortables
+            $("#psDiv").show();
+            $("#previewDiv").show();
+            
+            // clearPreviewPlatforms();
+            
+                var x = "75";
+                var $liObj = $("#pSortableList").children("li[id=" + x + "]");
+                moveToSortable($("#pSortableList"), $("#pSortableSelected"), x, $liObj.attr("name"), $liObj.children("label").html());
+            
+                var x = "24";
+                var $liObj = $("#pSortableList").children("li[id=" + x + "]");
+                moveToSortable($("#pSortableList"), $("#pSortableSelected"), x, $liObj.attr("name"), $liObj.children("label").html());
+            
+                var x = "2";
+                var $liObj = $("#pSortableList").children("li[id=" + x + "]");
+                moveToSortable($("#pSortableList"), $("#pSortableSelected"), x, $liObj.attr("name"), $liObj.children("label").html());
+            
+                var x = "86";
+                var $liObj = $("#pSortableList").children("li[id=" + x + "]");
+                moveToSortable($("#pSortableList"), $("#pSortableSelected"), x, $liObj.attr("name"), $liObj.children("label").html());
+            
+                var x = "84";
+                var $liObj = $("#pSortableList").children("li[id=" + x + "]");
+                moveToSortable($("#pSortableList"), $("#pSortableSelected"), x, $liObj.attr("name"), $liObj.children("label").html());
+            
+            updateCode();
+        
+
+        $('#copyCodeButton').zclip({
+            path: 'http://static.bshare.cn/js/libs/ZeroClipboard.swf',
+            copy: function() { return $("#bShare_Code").val(); },
+            afterCopy: function() {
+                displayStatusMessage('复制成功，您可以粘贴(Ctrl-V)到您网站的页面模板中了。');
+            }
+        });
+
+        $("form").attr("autocomplete", "off");
+        
+        $("#websiteTypeWww").addClass("selected");
+        
+        setBreadCrumbs(new Array('首页', 'bShare安装')
+            , new Array("http://www.bshare.cn", "/help/install"));
+    });
+</SCRIPT>
+			 </DIV>
+<DIV class="clear"></DIV>
+<DIV style="background: rgb(229, 229, 229); min-width: 980px;">
+<STYLE>
+    .bottomnav .bLink { color: #333; }
+    
+    .follow-sinaminiblog, .follow-qqmb, .follow-sohuminiblog, .follow-neteasemb { background: url(http://static.bshare.cn/frame/images/logos/m2/sinaminiblog-off.gif); width:24px; height:24px; margin-right:5px; }
+    .follow-qqmb { background: url(http://static.bshare.cn/frame/images/logos/m2/qqmb-off.gif); }
+    .follow-sohuminiblog { background: url(http://static.bshare.cn/frame/images/logos/m2/sohuminiblog-off.gif); }
+    .follow-neteasemb { background: url(http://static.bshare.cn/frame/images/logos/m2/neteasemb-off.gif); }
+    .follow-sinaminiblog:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/sinaminiblog.gif); }
+    .follow-qqmb:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/qqmb.gif); }
+    .follow-sohuminiblog:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/sohuminiblog.gif); }
+    .follow-neteasemb:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/neteasemb.gif); }
+</STYLE>
+ 
+<DIV class="container-center">
+<DIV class="bottomnav">
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">什么是bShare?</DIV>
+<DIV><A title="bShare介绍" class="bLink" 
+href="http://www.bshare.cn/intro">bShare介绍</A></DIV>
+<DIV><A title="bShare特色" class="bLink" 
+href="http://www.bshare.cn/intro/reasons">bShare特色</A></DIV>
+<DIV><A title="支持的平台" class="bLink" 
+href="http://www.bshare.cn/intro/services">支持的平台</A></DIV><!-- <div><a title="谁在用bShare?" class="bLink" href="/intro/bshareSites">谁在用bShare?</a></div> -->
+			 
+<DIV class="clear"></DIV></DIV>
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">为何用bShare?</DIV>
+<DIV><A title="数据统计" class="bLink" 
+href="http://www.bshare.cn/analytics">数据统计</A></DIV>
+<DIV><A title="自定义按钮" class="bLink" 
+href="http://www.bshare.cn/introCustomize">自定义按钮</A></DIV>
+<DIV><A title="bShare一键通" class="bLink" href="http://www.bshare.cn/products/bsync">bShare一键通</A></DIV>
+<DIV><A title="bURL" class="bLink" 
+href="http://www.bshare.cn/products/burl">bURL</A></DIV><!--
+			<div><a title="社交网络优化 (SMO)" class="bLink" href="/smo">社交网络优化 (SMO)</a></div>
+			<div><a title="API概述" class="bLink" href="/apiOverview">API概述</a></div>
+			-->
+			 
+<DIV class="clear"></DIV></DIV>
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">获取bShare!</DIV>
+<DIV><A title="一般网站" class="bLink" 
+href="http://www.bshare.cn/help/install">一般网站</A></DIV>
+<DIV><A title="更多样式" class="bLink" 
+href="http://www.bshare.cn/moreStyles">更多样式</A></DIV>
+<DIV><A title="bShare图片分享" class="bLink" href="http://www.bshare.cn/products/imageShare">bShare图片分享</A></DIV>
+<DIV><A title="bShare高级" class="bLink" href="http://www.bshare.cn/products/premiumServices">bShare高级</A></DIV><!-- 
+			<div><a title="bShare企业版" class="bLink" href="/bshareEnterprise">bShare企业版</a></div>
+			<div><a title="Blogbus用户" class="bLink" href="/blogbusRegister">Blogbus用户</a></div>
+			<div><a title="Discuz!用户" class="bLink" href="/discuzx1Register">Discuz!用户</a></div>
+			<div><a title="Wordpress用户" class="bLink" href="/wordpressRegister">Wordpress用户</a></div>
+			-->
+			 
+<DIV class="clear"></DIV></DIV>
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">浏览器插件</DIV>
+<DIV><A title="bShare书签" class="bLink" href="http://www.bshare.cn/products/bookmark">bShare书签</A></DIV>
+<DIV><A title="浏览器插件" class="bLink" 
+href="http://www.bshare.cn/browserPlugins">浏览器插件</A></DIV><!--
+			<div><a title="IE插件" class="bLink" href="/browserPlugins">IE插件</a></div>
+			<div><a title="Firefox插件" class="bLink" href="/browserPlugins">Firefox插件</a></div>
+			<div><a title="Chrome插件" class="bLink" href="/browserPlugins">Chrome插件</a></div>
+			<div><a title="Other插件" class="bLink" href="/browserPlugins">Other插件</a></div>
+			-->
+			 
+<DIV class="heading4" style="padding: 13px 0px 10px;">开放平台</DIV>
+<DIV><A title="展览厅" class="bLink" 
+href="http://www.bshare.cn/gallery">展览厅</A></DIV>
+<DIV class="hidden"><A title="实验室" class="bLink" href="http://www.bshare.cn/labs">实验室</A></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">关于我们</DIV>
+<DIV><A title="关于bShare" class="bLink" 
+href="http://www.bshare.cn/about">关于bShare</A></DIV><!-- 
+			<div><a title="关于buzzinate" class="bLink" target="_blank" href="http://www.buzzinate.com/aboutus_company.php">关于buzzinate</a><img style="margin:0 0 3px 3px;" src="http://static.bshare.cn/images/icon_new_window.gif"/></div>
+			-->
+			 
+<DIV class="hidden"><A title="江湖" class="bLink" 
+href="http://jianghu.bshare.cn/">江湖</A><IMG style="margin: 0px 0px 3px 3px;" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/icon_new_window.gif"></DIV>
+<DIV><A title="联系我们" class="bLink" 
+href="http://www.bshare.cn/contact">联系我们</A></DIV>
+<DIV><A title="招贤纳士" class="bLink" 
+href="http://www.bshare.cn/career">招贤纳士</A></DIV>
+<DIV><A title="bShare博客" class="bLink" href="http://www.bshare.cn/blog" target="_blank">bShare博客</A><IMG 
+style="margin: 0px 0px 3px 3px;" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/icon_new_window.gif"></DIV>
+<DIV class="heading4" style="padding: 13px 0px 10px;">关注bShare</DIV>
+<DIV><A class="follow-sinaminiblog inlineBlock" href="http://weibo.com/bshare" 
+target="_blank"></A>                 <A class="follow-qqmb inlineBlock" href="http://t.qq.com/bShare" 
+target="_blank"></A>                 <A class="follow-sohuminiblog inlineBlock" 
+href="http://t.sohu.com/u/8642674" target="_blank"></A>                 <A 
+class="follow-neteasemb inlineBlock" style="margin-right: 0px;" href="http://t.163.com/4104388906" 
+target="_blank"></A>             </DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="bottomnav-inner">
+<DIV class="heading4" style="padding-bottom: 10px;">支持</DIV>
+<DIV><A title="FAQ" class="bLink" href="http://www.bshare.cn/help">帮助</A></DIV>
+<DIV><A title="问题反馈" class="bLink" 
+href="http://www.bshare.cn/feedback">问题反馈</A></DIV>
+<DIV><A title="使用条款" class="bLink" 
+href="http://www.bshare.cn/terms">使用条款</A></DIV>
+<DIV><A title="隐私条款" class="bLink" 
+href="http://www.bshare.cn/privacy">隐私条款</A></DIV>
+<DIV><A title="网站地图" class="bLink" href="http://www.bshare.cn/sitemap.html" 
+target="_blank">网站地图</A></DIV>
+<DIV class="hidden" id="langLinkDiv"><A class="bLink" id="languageLink" href="javascript:;">Language</A><IMG 
+style="margin: 0px 0px -2px 3px;" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/lang-icon.png"></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV style="background: rgb(229, 229, 229);">
+<DIV class="clear spacer10"></DIV>
+<DIV class="container-center" style="width: auto; text-align: center; font-size: 10px;"><SPAN><A 
+title="沪ICP备09026724号" style="color: rgb(102, 102, 102); text-decoration: none;" 
+href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备09026724号</A></SPAN>		 
+<DIV class="clear spacer2"></DIV><SPAN style="color: rgb(102, 102, 102);">© 
+2009-2015 <A title="擘纳" class="bLinkOrangeU" href="http://www.buzzinate.com/" 
+target="_blank">擘纳</A>（上海）信息科技有限公司。版权所有。</SPAN>     
+<DIV class="clear spacer15"></DIV>
+<DIV style="text-align: center;"><A style="margin-right: 10px;" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120703161312773" 
+target="_blank"><IMG src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/sgs_license1.gif" 
+border="0"></A>         <A id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20130327002375002858" 
+target="_blank"><IMG 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/cx_license.gif"></A> 
+<SCRIPT type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</SCRIPT>
+     </DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="right" style="margin: -11px 15px 0px 0px;"><A title="Buzzinate" 
+href="http://www.buzzinate.com/" target="_blank"><IMG title="Buzzinate" alt="a buzzinate company" 
+src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/buzzinate-company-grey.png"></A></DIV>
+<DIV class="clear"></DIV>
+<DIV class="clear spacer5"></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="div-gradient-dark-top" 
+style="height: 50px; min-width: 980px;"></DIV><!-- FLOATING QQ SERVICE START -->
+	 <A id="qqservicetab" href="http://wpa.qq.com/msgrd?v=3&amp;uin=800087176&amp;site=qq&amp;menu=yes" 
+target="_blank"></A><!-- <img src="http://static.bshare.cn/images/tab-service-zh.gif"/> -->
+	 <!-- FLOATING QQ SERVICE START -->		 <!-- LANGUAGE POPUP --> 
+<DIV class="language-menu-popup" id="languagemenupopup"><SPAN></SPAN>
+<UL>
+  <LI class="popupliheader">Choose your language</LI>
+  <LI style="padding-top: 10px;"><IMG style="margin-bottom: -1px;" alt="en" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/lang-en.gif">&nbsp;<A 
+  title="English" class="bLinkU" href="http://www.bshare.cn/help/installAction?request_locale=en">English</A></LI>
+  <LI><IMG style="margin-bottom: -1px;" alt="zh" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/lang-zh.gif">&nbsp;<A 
+  title="简体中文" class="bLinkU" href="http://www.bshare.cn/help/installAction?request_locale=zh">简体中文</A></LI>
+  <LI><IMG style="margin-bottom: -1px;" alt="zh_TW" src="分享到新浪微博代码,分享到各大网站按钮一般网站-bShare安装_files/lang-zh_TW.gif">&nbsp;<A 
+  title="繁體中文" class="bLinkU" href="http://www.bshare.cn/help/installAction?request_locale=zh_TW">繁體中文</A></LI></UL></DIV><!-- LANGUAGE POPUP END --> 
+<SCRIPT type="text/javascript" charset="utf-8">
+	$(function() {
+		$("#languageLink").tooltip({
+			tip: "#languagemenupopup",
+			position: "top right",
+			delay: 1000,
+			effect: "fade"
+		});
+		
+		
+			var showLang1 = false;
+			var showLang2 = false;
+			$(document).keypress(function(e) {
+				if (e.keyCode == 108) {
+					showLang1 = true;
+					showLang2 = false;
+					return;
+			    }
+				if (showLang1 && e.keyCode == 110) {
+					if (showLang2) {
+						showLang1 = false;
+						showLang2 = false;
+						return false;
+					}
+					showLang2 = true;
+					return;
+			    }
+				if (showLang1 && showLang2 && e.keyCode == 103) {
+					$("#langLinkDiv").show();
+			    }
+				showLang1 = false;
+				showLang2 = false;
+			});
+		
+	});
+</SCRIPT>
+		 <!-- Global floating notification system -->	 <!-- Global floating notification start --> 
+<DIV class="hidden" id="notifications">
+<DIV class="notification-bar-container">
+<DIV class="notification-bar-bkg"></DIV>
+<DIV class="notification-bar">
+<DIV class="notification-bar-contents">
+<DIV class="notification-msg heading1"></DIV></DIV></DIV></DIV></DIV><!-- Global floating notification END -->
+	 <!-- Global floating notification system -->		 <!-- SCRIPTS -->	 
+<SCRIPT type="text/javascript" charset="utf-8">
+	    $(function() {
+		    // temp fix for chrome HTML5 validation
+	    	$('form').attr('novalidate', 'novalidate');
+		    
+	    	// for leftMenus
+	    	var s = "help/installAction".replace("/", "-");
+			var rel = $(".leftMenu-" + s).addClass("active").parent().parent().attr("id");
+			var toCl = $("div[rel=" + rel + "]").addClass("active");
+			if (typeof leftMenuHelp !== "undefined") toCl.click();
+			
+			$(".leftMenuTitle-help/installAction").addClass("bLeftMenuTitleActive");
+	    });
+	</SCRIPT>
+	 
+<SCRIPT type="text/javascript" charset="utf-8">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</SCRIPT>
+	 
+<SCRIPT type="text/javascript" charset="utf-8">
+		try {
+			var pageTracker = _gat._getTracker("UA-11228114-1");
+			pageTracker._setDomainName("www.bshare.cn");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</SCRIPT>
+	 <!-- SCRIPTS-END --> </BODY></HTML>

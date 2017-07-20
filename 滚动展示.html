@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>css+js控制图片展示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+*{ padding: 0px; margin: 0px; font: 10px verdana, geneva, arial, helvetica, sans-serif; color: #000;  list-style: none;}
+#focus{ border: #ccc 1px solid;width: 220px;}
+#beni{width: 220px;}
+#beni li{float: left; width: 55px;  height:26px; text-align:center; background:#09C}
+#beni li.first{}
+#beni li a{ display: block;line-height: 26px;}
+#beni li a:hover{ background: #f9f9f9 }
+#description{ width:220px; height:99px; overflow:hidden; clear:both}
+#description li{ float:left; display:block;}
+</STYLE>
+<script>
+window.onload=function(){
+  var ele=document.getElementById("description");
+  var w=ele.clientWidth;
+  var n=20,t=20;
+  var timers=new Array(n);
+  var c=document.getElementById("beni").getElementsByTagName("li");
+  for(var i=0;i<c.length;i++){
+    c[i].index=i;
+    c[i].onmouseover=doSlide;
+  }
+  c=null;
+  function doSlide(){
+    var x=ele.scrollLeft;
+    var d=this.index*w-x;
+    if(!d) return;
+    for(var i=0;i<n;i++)(function(){
+      if(timers[i])
+        clearTimeout(timers[i]);
+      var j=i;
+      timers[i]=setTimeout(function(){
+        ele.scrollLeft=x+Math.round(d*Math.sin(Math.PI*(j+1)/(2*n)));
+      },(i+1)*t);
+    })();
+  }
+}
+</script>
+</head>
+<body>
+<div id=focus>
+  <ul id=beni>
+      <li class=first><a href="#">oggetti</a></li>
+      <li><a href="#">architet</a></li>
+      <li><a href="#">reperti</a></li>
+      <li><a href="#">stampe</a></li>
+  </ul>
+  <div id=description> <img src="/jscss/demoimg/201203/s_pic.jpg" /></div>
+</div>
+</body>
+</html>

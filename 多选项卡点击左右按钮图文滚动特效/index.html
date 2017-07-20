@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>支持图片左右滚动的tab标签选项卡代码特效</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet">
+<script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<div style="padding:50px;">
+  <!--效果开始-->
+  <div class="m2yw_right">
+    <div class="m2yw_tab">
+      <ul id="tab2">
+        <li class="m2yw_cutli" onmousemove="changeTab(2,1)">网页模板</li>
+        <li onmousemove="changeTab(2,2)">平面设计</li>
+        <li onmousemove="changeTab(2,3)">网页特效</li>
+        <li onmousemove="changeTab(2,4)">酷站欣赏</li>
+        <li onmousemove="changeTab(2,5)">动画酷站</li>
+        <li onmousemove="changeTab(2,6)">网页模板</li>
+        <li onmousemove="changeTab(2,7)">酷站欣赏</li>
+      </ul>
+    </div>
+    <div id="tablist2">
+      <div class="m2yw_pic">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intke_sml1337184692112482652.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格一</a></li>
+            <li><img width="173" height="116" src="images/intsml1337184546.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格二</a></li>
+            <li><img width="173" height="116" src="images/intsml1337177137.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格三</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337184692581665964.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格四</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337184692655242742.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格五</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intsml1337216189.jpg" alt="平面设计"> <a href="#" target="_blank">平面设计一</a></li>
+            <li><img width="173" height="116" src="images/intsml1337216824.jpg" alt="平面设计"> <a href="#" target="_blank">平面设计二</a></li>
+            <li><img width="173" height="116" src="images/intke_sml13379332231236460235.jpg" alt="平面设计"> <a href="#" target="_blank">平面设计三</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337330436449361266.jpg" alt="平面设计"> <a href="#" target="_blank">平面设计四</a></li>
+            <li><img width="173" height="116" src="images/intke_sml13372683711028074882.jpg" alt="平面设计"> <a href="#" target="_blank">平面设计五</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/internetke_1340258852.jpg" alt="网页特效"> <a href="#" target="_blank">网页特效一</a></li>
+            <li><img width="173" height="116" src="images/internetke_1339470328.jpg" alt="网页特效"> <a href="#" target="_blank">网页特效二</a></li>
+            <li><img width="173" height="116" src="images/internetke_1339263480.jpg" alt="网页特效"> <a href="#" target="_blank">网页特效三</a></li>
+            <li><img width="173" height="116" src="images/internetke_1339258051.jpg" alt="网页特效"> <a href="#" target="_blank">网页特效四</a></li>
+            <li><img width="173" height="116" src="images/internetke_1338735869.jpg" alt="网页特效"> <a href="#" target="_blank">网页特效五</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intke_sml1337421450646127874.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站一</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337451051128038502.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站二</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337451277747011597.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站三</a></li>
+            <li><img width="173" height="116" src="images/intke_sml13374515852094149483.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站四</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intsml1337400225.jpg" alt="酷站欣赏"> <a href="#" target="_blank">动画酷站一</a></li>
+            <li><img width="173" height="116" src="images/intsml1337451857.jpg" alt="酷站欣赏"> <a href="#" target="_blank">动画酷站二</a></li>
+            <li><img width="173" height="116" src="images/intke_sml13374033822137232543.jpg" alt="酷站欣赏"> <a href="#" target="_blank">动画酷站三</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intke_sml1337184692112482652.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格一</a></li>
+            <li><img width="173" height="116" src="images/intsml1337184546.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格二</a></li>
+            <li><img width="173" height="116" src="images/intsml1337177137.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格三</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337184692581665964.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格四</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337184692655242742.jpg" alt="网站模板"> <a href="#" target="_blank">网站模板风格五</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+      <div class="m2yw_pic hidden">
+        <div onclick="upMove(this);return false" class="m2yw_btnl"><img width="16" height="114" src="images/m2btn3.jpg"></div>
+        <div class="m2yw_piclist">
+          <ul class="m2yw_posul">
+            <li><img width="173" height="116" src="images/intke_sml1337421450646127874.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站一</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337451051128038502.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站二</a></li>
+            <li><img width="173" height="116" src="images/intke_sml1337451277747011597.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站三</a></li>
+            <li><img width="173" height="116" src="images/intke_sml13374515852094149483.jpg" alt="酷站欣赏"> <a href="#" target="_blank">酷站四</a></li>
+          </ul>
+        </div>
+        <div onclick="downMove(this);return false" class="m2yw_btnr"><img width="16" height="114" src="images/m2btn4.jpg"></div>
+      </div>
+    </div>
+  </div>
+  <!-- footer End -->
+  <script language="javascript" src="js/js.js"></script>
+  <!--End-->
+</div>
+</body>
+</html>

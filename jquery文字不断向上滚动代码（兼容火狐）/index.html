@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery文字不断向上滚动代码（兼容火狐）</title>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css">
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+</head>
+<body>
+<div>
+  <dl id="ticker" class="ticker">
+    <dt class="heading">哈哈1</dt>
+    <dt class="heading">呵呵2</dt>
+    <dt class="heading">嘻嘻3</dt>
+    <dt class="heading">嘎嘎4</dt>
+    <dt class="heading">咳咳5</dt>
+    <dt class="heading">咳6咳6</dt>
+    <dt class="heading">咳咳7</dt>
+    <dt class="heading">咳咳8</dt>
+    <dt class="heading">咳3咳9</dt>
+    <dt class="heading">咳咳10</dt>
+    <dt class="heading">咳咳11</dt>
+  </dl>
+</div>
+<div>
+  <dl id="ticker2" class="ticker">
+    <dt class="heading">哈哈1</dt>
+    <dt class="heading">呵呵2</dt>
+    <dt class="heading">嘻嘻3</dt>
+    <dt class="heading">嘎嘎4</dt>
+    <dt class="heading">咳咳5</dt>
+    <dt class="heading">咳6咳6</dt>
+    <dt class="heading">咳咳7</dt>
+    <dt class="heading">咳咳8</dt>
+    <dt class="heading">咳3咳9</dt>
+    <dt class="heading">咳咳10</dt>
+    <dt class="heading">咳咳11</dt>
+  </dl>
+</div>
+<script type="text/javascript">
+	  $(function() {
+		var ticker = $("#ticker2");
+		ticker.children().filter("dt").each(function() {
+		  var dt = $(this),
+		    container = $("<div>");
+		  dt.next().appendTo(container);
+		  dt.prependTo(container);
+		  container.appendTo(ticker);
+		});
+		ticker.css("overflow", "hidden");
+		function animator(currentItem) {
+		  var distance = currentItem.height();
+			duration = (distance + parseInt(currentItem.css("marginTop"))) / 0.025;
+		  currentItem.animate({ marginTop: -distance }, duration, "linear", function() {
+			currentItem.appendTo(currentItem.parent()).css("marginTop", 0);
+			animator(currentItem.parent().children(":first"));
+		  }); 
+		};
+		animator(ticker.children(":first"));
+		ticker.mouseenter(function() {
+		  ticker.children().stop();
+		});
+		ticker.mouseleave(function() {
+		  animator(ticker.children(":first"));
+		  
+		});
+	  });
+	  
+	  
+	  
+	  $(function() {
+		var ticker = $("#ticker");
+		ticker.children().filter("dt").each(function() {
+		  var dt = $(this),
+		    container = $("<div>");
+		  dt.next().appendTo(container);
+		  dt.prependTo(container);
+		  container.appendTo(ticker);
+		});
+		ticker.css("overflow", "hidden");
+		function animator(currentItem) {
+		  var distance = currentItem.height();
+			duration = (distance + parseInt(currentItem.css("marginTop"))) / 0.025;
+		  currentItem.animate({ marginTop: -distance }, duration, "linear", function() {
+			currentItem.appendTo(currentItem.parent()).css("marginTop", 0);
+			animator(currentItem.parent().children(":first"));
+		  }); 
+		};
+		animator(ticker.children(":first"));
+		ticker.mouseenter(function() {
+		  ticker.children().stop();
+		});
+		ticker.mouseleave(function() {
+		  animator(ticker.children(":first"));
+		});
+	  });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery实现页面向下滚动后显示隐藏导航条</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+.nav{ width:1000px; height:30px; line-height:30px;position:fixed; left:50%; margin-left:-500px; top:0;z-index:888; background:#636871; display:none;}
+.nav a{ color:#fff; text-decoration:none; display:block; float:left; height:30px; line-height:30px; padding:0px 15px; font-size:12px;}
+.nav a:hover{ background:#4b505a;}
+</style>
+</head>
+<body style="height:4000px;">
+<div class="nav">
+<a href='http://www.lanrenzhijia.com/'>首页</a>
+<a href='http://www.lanrenzhijia.com/flash/' >Flash素材</a>
+<a href='http://www.lanrenzhijia.com/nav/' >菜单导航</a>
+<a href='http://www.lanrenzhijia.com/time/' >时间日期</a>
+<a href='http://www.lanrenzhijia.com/banner/' >焦点图</a>
+<a href='http://www.lanrenzhijia.com/tab/' >tab标签</a>
+<a href='http://www.lanrenzhijia.com/jquery/' >jquery特效</a>
+<a href='http://www.lanrenzhijia.com/service/' >在线客服</a>
+<a href='http://www.lanrenzhijia.com/ads/' >广告代码</a>
+<a href='http://www.lanrenzhijia.com/album/' >相册代码</a>
+<a href='http://www.lanrenzhijia.com/pic/' >图片特效</a>
+<a href='http://www.lanrenzhijia.com/famous/' >名站特效</a>
+<a href='http://www.lanrenzhijia.com/others/' >其他代码</a>
+<a href='http://www.lanrenzhijia.com/adam/first/' >亚当学院</a>
+<a href='http://www.lanrenzhijia.com/js/css3/' >HTML5</a>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+//滚动后导航固定
+$(function(){
+	$(window).scroll(function(){
+          height = $(window).scrollTop();
+   	  	  if(height > 300){
+   	  	  	$('.nav').fadeIn();
+   	  	  }else{
+   	  	  	$('.nav').fadeOut();
+   	  	  };
+
+});
+});
+</script>
+</body>
+</html>

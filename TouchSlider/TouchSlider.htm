@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0028)http://u.boy.im/touchslider/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META charset="utf-8"> <TITLE>TouchSlider</TITLE> 
+<META name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<LINK href="TouchSlider_files/style.css" rel="stylesheet"> 
+<SCRIPT src="TouchSlider_files/touchslider.js" type="text/javascript"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17937"></HEAD> 
+<BODY>
+<H1>TouchSlider</H1>
+<H2>full-width 类型：容器宽度自适应，幻灯宽度不固定，居中对齐（iphone版appStore上截图展现方式） <BR>调用方式：new 
+TouchSlider('slider',{duration:800, interval:3000, direction:0, autoplay:true, 
+align:'center', mousewheel:false, mouse:true, <FONT 
+color="red">fullsize:false</FONT>});</H2>
+<DIV class="swipe" style="margin: 10px;">
+<UL id="slider">
+  <LI style="display: block;">
+  <DIV>1</DIV></LI>
+  <LI>
+  <DIV>2</DIV></LI>
+  <LI>
+  <DIV>3</DIV></LI>
+  <LI>
+  <DIV>4</DIV></LI>
+  <LI>
+  <DIV>5</DIV></LI></UL></DIV><BUTTON onclick="t1.pause();">暂停</BUTTON> <BUTTON 
+onclick="t1.play();">播放</BUTTON> <BUTTON onclick="t1.prev();">上一张</BUTTON> 
+<BUTTON onclick="t1.next();">下一张</BUTTON> 
+<H2>full-width 类型：容器宽度自适应，幻灯宽度不固定，靠左对齐（ipad版appStore上截图展现方式） <BR>调用方式：new 
+TouchSlider('slider',{duration:800, interval:3000, direction:0, autoplay:true, 
+<FONT color="red">align:'left'</FONT>, mousewheel:false, mouse:true, <FONT 
+color="red">fullsize:false</FONT>});</H2>
+<DIV class="swipe" style="margin: 10px;">
+<UL id="slider1">
+  <LI style="display: block;">
+  <DIV>1</DIV></LI>
+  <LI>
+  <DIV>2</DIV></LI>
+  <LI>
+  <DIV>3</DIV></LI>
+  <LI>
+  <DIV>4</DIV></LI>
+  <LI>
+  <DIV>5</DIV></LI></UL></DIV><BUTTON onclick="t11.pause();">暂停</BUTTON> <BUTTON 
+onclick="t11.play();">播放</BUTTON> <BUTTON onclick="t11.prev();">上一张</BUTTON> 
+<BUTTON onclick="t11.next();">下一张</BUTTON> <BUTTON style="background: red; color: rgb(255, 255, 255);" 
+onclick="var li=document.createElement('li');li.innerHTML='<div>'+(t11.pages.length+1)+'</div>';t11.append(li);">增加</BUTTON> 
+<BUTTON style="background: red; color: rgb(255, 255, 255);" onclick="t11.remove(0);">删除</BUTTON> 
+<H2>250px-width 类型：容器宽度250px，固定宽度幻灯，方向向上滚动 <BR>调用方式：new 
+TouchSlider('slider2',{duration:600, interval:3000,  <FONT 
+color="red">direction:1</FONT>, autoplay:true, align:'middle', <FONT 
+color="red">mousewheel:true</FONT>, mouse:true, fullsize:true});</H2>
+<DIV class="swipe" style="width: 250px; height: 143px;">
+<UL id="slider2">
+  <LI class="a" style="display: block;">
+  <DIV>1</DIV></LI>
+  <LI class="a" style="display: none;">
+  <DIV>2</DIV></LI>
+  <LI class="a" style="display: none;">
+  <DIV>3</DIV></LI>
+  <LI class="a" style="display: none;">
+  <DIV>4</DIV></LI>
+  <LI class="a" style="display: none;">
+  <DIV>5</DIV></LI></UL></DIV><BUTTON onclick="t2.pause();">暂停</BUTTON> <BUTTON 
+onclick="t2.play();">播放</BUTTON> <BUTTON onclick="t2.prev();">上一张</BUTTON> 
+<BUTTON onclick="t2.next();">下一张</BUTTON> 
+<H2>Full-width 类型：容器宽度自适应，幻灯宽度固定<BR>调用方式：new 
+TouchSlider('slider',{duration:1000, direction:0, interval:3000, 
+fullsize:true})</H2>
+<DIV class="swipe" style="height: 123px;">
+<UL id="slider3">
+  <LI style="display: block;">
+  <DIV>1</DIV></LI>
+  <LI style="width: 200px; display: none;">
+  <DIV>2   <A href="http://www.qiqiboy.com/" 
+  target="_blank">qiqiboy</A></DIV></LI>
+  <LI style="width: 300px; display: none;">
+  <DIV>3</DIV></LI>
+  <LI style="width: 100px; display: none;">
+  <DIV>4</DIV></LI>
+  <LI style="width: 500px; display: none;">
+  <DIV>5</DIV></LI></UL></DIV><BUTTON onclick="t3.pause();">暂停</BUTTON> <BUTTON 
+onclick="t3.play();">播放</BUTTON> <BUTTON onclick="t3.prev();">上一张</BUTTON> 
+<BUTTON onclick="t3.next();">下一张</BUTTON> 
+<H2>image slider new TouchSlider('slider4',{speed:1000, direction:0, 
+interval:6000, fullsize:true})</H2>
+<DIV class="swipe">
+<UL id="slider4">
+  <LI style="display: block;"><A href="http://boy.im/"><IMG alt="" src="TouchSlider_files/1.jpg"></A></LI>
+  <LI><IMG alt="" src="TouchSlider_files/2.jpg"></LI>
+  <LI><IMG alt="" src="TouchSlider_files/3.jpg"></LI>
+  <LI><IMG alt="" src="TouchSlider_files/4.jpg"></LI></UL></DIV>
+<DIV>页码实现方式一(未加状态标识)：	 <A onclick="t4.slide(0);return false;" href="http://u.boy.im/touchslider/#">1 
+</A>	 <A onclick="t4.slide(1);return false;" href="http://u.boy.im/touchslider/#"> 
+2 </A>	 <A onclick="t4.slide(2);return false;" href="http://u.boy.im/touchslider/#"> 
+3 </A>	 <A onclick="t4.slide(3);return false;" href="http://u.boy.im/touchslider/#"> 
+4 </A> </DIV><BR>
+<DIV id="pagenavi">页码实现方式二：	 <A class="active" href="http://u.boy.im/touchslider/#">1</A>
+	 <A href="http://u.boy.im/touchslider/#">2</A>	 <A href="http://u.boy.im/touchslider/#">3</A>
+	 <A href="http://u.boy.im/touchslider/#">4</A> </DIV><BR><BUTTON onclick="t4.pause();">暂停</BUTTON> 
+<BUTTON onclick="t4.play();">播放</BUTTON> <BUTTON 
+onclick="t4.prev();">上一张</BUTTON> <BUTTON onclick="t4.next();">下一张</BUTTON> 
+<BR><BR>
+<DIV id="copyright">Copyright 2012 <A 
+href="http://www.qiqiboy.com/">http://www.qiqiboy.com/</A></DIV>
+<SCRIPT type="text/javascript">
+console=window.console || {dir:new Function(),log:new Function()};
+var active=0,
+	as=document.getElementById('pagenavi').getElementsByTagName('a');
+for(var i=0;i<as.length;i++){
+	(function(){
+		var j=i;
+		as[i].onclick=function(){
+			t4.slide(j);
+			return false;
+		}
+	})();
+}
+var t1=new TouchSlider('slider',{duration:800, interval:3000, direction:0, autoplay:true, align:'center', mousewheel:false, mouse:true, fullsize:false});
+var t11=new TouchSlider('slider1',{duration:800, interval:3000, direction:0, autoplay:true, align:'left', mousewheel:false, mouse:true, fullsize:false});
+var t2=new TouchSlider('slider2',{duration:600, interval:3000, direction:1, autoplay:true, align:'middle', mousewheel:true, mouse:true, fullsize:true});
+var t3=new TouchSlider('slider3',{duration:1000, direction:0, interval:3000, fullsize:true});
+var t4=new TouchSlider('slider4',{speed:1000, direction:0, interval:6000, fullsize:true});
+t4.on('before',function(m,n){
+    as[m].className='';
+	as[n].className='active';
+})
+</SCRIPT>
+   </BODY></HTML>
